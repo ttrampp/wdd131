@@ -7,9 +7,10 @@
     <meta name="description" content="Home Page - WDD 131 - Dynamic Web Fundamentals - Tanya Trampp">
     <meta name="author" content="Tanya Trampp">
     <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <header></header>
+    <header>
         <h1>WDD 131 - Dynamic Web Fundamentals - Tanya Trampp</h1>
         <nav class="pages">
             <a href="https://linkedin.com" target="_blank">LinkedIn</a>
@@ -17,12 +18,16 @@
             <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/1-jn/4?lang=eng" target="_blank">Scripture</a>
             <a href="#">Final Project</a>
         </nav>
-    <secti>
+    </header>
+    <main>
         <section class="card" id="About Me">
             <div class="about-me">
                 <h2>About Me</h2>
             </div>
-            <div class="photo-me">
+            <div class="me-info"></div>
+                <p> My name is Tanya Trampp. I lived most of my life in New Mexico. I am a stay-at-home mom. I have 6 children with ages ranging from 12-32. I homeschool my two youngest children. Bookkeeping is another job I have. My husband and I spend as much time together and with the kids as we can.</p>
+            </div>
+                <div class="photo-me">
                 <img id="photo-me" src="./images/profile.jpg" alt="Picture of Me">
             </div>
             <div class="place-home">
@@ -55,7 +60,7 @@
             </div>
         </section>
     </main>
-    <p>
+    <footer>
         <p>©2024 👀 Tanya Trampp 👀 New Mexico, USA</p>                   <!-- windows + ; for emojis-- remember this woman! -->
         <p>Last Modified: <span id="date-modified"></span></p>             <!-- 1st time using JavaScript, yay!-->
         <script>
