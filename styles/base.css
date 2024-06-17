@@ -12,7 +12,7 @@
 
 body {
     display: block;
-    height: 100vh;
+    /*height: 100vh;*/
     background-color: aquamarine;
     margin: 0;
     padding: 0;
@@ -68,7 +68,7 @@ main {
 }
 
 .h2 {
-    display: block;
+    /*display: block;*/
     font-weight: bold;
     background-color: black;
     text-align: center;
@@ -101,15 +101,16 @@ main {
     grid-column: span 2;
 }
 
-.h2 {
-    display: block;
+/*.h2 {
+    /*display: block;
     font-weight: bold;
     margin-block-start: .83em;
     margin-block-end: 0.83em;
     margin-inline-start: 0;
     margin-inline-end: 0;
     text-align: center;
-}
+    background-color: chartreuse;
+}*/
 
 .photo-me {
     /*display: flex;
@@ -169,6 +170,18 @@ main {
     margin-top: 150px;
 }
 
+.resource-links {
+    margin: 100px;
+}
+
+ul{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 38px;
+}
 .resource-links li a {
     color: black;
     background-color: blanchedalmond;
@@ -179,6 +192,7 @@ main {
     padding: 8px;
     display: list-item;
     text-align: center;
+    padding-inline-start: 38px;
 }
 /*-----SECTION CARD WEB DEV RESOURCES START-----*/
 
