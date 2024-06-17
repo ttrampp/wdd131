@@ -66,21 +66,41 @@ main {
     unicode-bidi: isolate;
 }
 
-/*-----SECTION CARD START-----*/
+.h2 {
+    display: block;
+    font-weight: bold;
+    background-color: black;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+/*----------SECTION CARDS START----------*/
 .card {
     display: flex;
     flex-direction: column;
     border: 1px solid blueviolet;
     border-radius: 8px;
     justify-content: normal;
-    background-color: azure;
+    background-color: rgb(28, 204, 204);
+    unicode-bidi: isolate;
 }
+/*----------SECTION CARDS END----------*/
+
+/*-----SECTION CARD ABOUT ME START-----*/
 
 .main about-me {
     grid-column: span 2;
 }
 
-.about-me h2 {
+.h2 {
     display: block;
     font-weight: bold;
     margin-block-start: .83em;
@@ -90,12 +110,14 @@ main {
 }
 
 .photo-me {
-    display: flex;
+    /*display: flex;
     align-items: center;
-    height: 150px;
+
     gap: 20px;
-    margin: 0;
+    margin: 0;*/
     padding: 26px;
+    max-width: 70%;
+    height: auto;
 }
 
 .me-info {
@@ -108,7 +130,7 @@ main {
     unicode-bidi: isolate;
 }
 
-.place-home h3 {
+.h3 {
     display: block;
     padding: 20px;
     gap: 20px;
@@ -137,31 +159,26 @@ main {
     margin-inline-end: 0;
     unicode-bidi: isolate;
 }
-/*-----SECTION CARD END-----*/
+/*-----SECTION CARD ABOUT ME END-----*/
 
-/*-----SECTION WEB DEV RESOURCES START-----*/
-.web-dev-resources {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid blueviolet;
-    border-radius: 8px;
-    justify-content: normal;
+/*-----SECTION CARD WEB DEV RESOURCES START-----*/
+
+.resources {
+    margin-top: 150px;
 }
 
-.web-dev-res h2 {
-    display: block;
-    font-weight: bold;
-}
-
-.links {
-    color: brown;
+.resource-links li a {
+    color: black;
     background-color: blanchedalmond;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0;
     margin-inline-end: 0;
+    padding: 8px;
+    display: list-item;
+    text-align: center;
 }
-/*-----SECTION WEB DEV RESOURCES START-----*/
+/*-----SECTION CARD WEB DEV RESOURCES START-----*/
 
 
 /*----------MAIN END----------*/
