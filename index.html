@@ -16,12 +16,52 @@
             <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/1-jn/4?lang=eng" target="_blank">Scripture</a>
             <a href="#">Final Project</a>
         </nav>
-    <main>
-        <section class="card" id="About Me"></section>
-        <section class="Web Dev Resources" id="Web Dev Resources"></section>
+    <secti>
+        <section class="card" id="About Me">
+            <div class="about-me">
+                <h2>About Me</h2>
+            </div>
+            <div class="photo-me">
+                <img id="photo-me" src="./images/profile.jpg" alt="Picture of Me">
+            </div>
+            <div class="place-home">
+                <h3>Kirtland, New Mexico</h3>
+            </div>
+            <div class="nm-info">
+                <figure>
+                    <img id="nm-flag" src="./images/nm-flag.png" alt="NM State Flag">
+                    <figcaption>New Mexico State Flag</figcaption>
+                </figure>
+            </div>
+            <div class="nm-info2">
+                <p>New Mexico is one of the Four Corner Region states, the south eastern most state. NM a heavily blended culture state, with large numbers of Native American, Hispanic, and Anglo. NM is one of the most southern Rocky Mountain state. New Mexico's elevation ranges from 2,842 ft and 13,161 ft above sea level, with the average being about 4,700 ft above sea level. New Mexico is well known for it's chile. A common question in NM is "Red, Green, or Christmas?".</p>
+            </div>
+        </section>
+        <section class="Web Dev Resources" id="Web Dev Resources">
+            <div class="web-dev-res">
+                <h2>Web Dev Resources</h2>
+            </div>
+            <div class="links">
+                <nav>
+                    <a href="https://developer.mozilla.org/en-US/" alt="mdn"></a>
+                    <a href="https://www.w3schools.com/" alt="w3schools"></a>
+                    <a href="https://coolors.co/" alt="color-generator"></a>
+                    <a href="https://www.siegemedia.com/contrast-ratio" alt="contrast-ratio"></a>
+                    <a href="https://code.visualstudio.com/docs" alt="VS-Code"></a>
+                    <a href="https://codepip.com/games/" alt="coding-games"></a>
+                    <a href="https://gridbyexample.com/learn/" alt="coding-help"></a>
+                </nav>
+            </div>
+        </section>
     </main>
     <footer>
-
+        <p>©2024 👀 Tanya Trampp 👀 New Mexico, USA</p>                  <!-- windows + ; for emojis-- remember this woman! -->
+        <p>Last Modified:</p>
+        <p id="date-modified"></p>
+        <script>
+            let text = document.lastModified;
+            document.getElementById("date-modified").innerHTML = text;
+        </script>
     </footer>
 </body>
 </html>
