@@ -13,7 +13,7 @@
 body {
     /*display: block;*/
     /*height: 100vh;*/
-    background-color: aquamarine;
+    background-color: #F2E9DC;
     margin: 0;
     padding: 0;
     color: black;
@@ -22,20 +22,20 @@ body {
 }
 /*----------HEADER START----------*/
 header {
-    background-color: rgb(87, 86, 86);
+    background-color: #595959;
     text-align: center;
     padding: 0px;
     display: block;
     flex-direction: column;
     margin: 0;
     align-items: center;
-    color: white;
+    color: #F2E9DC;
 
 }
 
 header h1 {
     padding: 1rem;
-    color: white;
+    color: #F2E9DC;
     font-size: medium;
     height: 50px;
     font-weight: lighter;
@@ -53,17 +53,17 @@ header h1 {
     padding: 1rem;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(34, 50, 174);
+    background-color: #91C499;
 }
 
 .pages a {
-    color: white;
+    color: #F2E9DC;
     text-decoration: none;
     
 }
 
 .pages a:hover {
-    color: brown;
+    color: #808F85;
 }
 /*----------HEADER END----------*/
 
@@ -103,7 +103,7 @@ main {
     border: 1px solid blueviolet;
     border-radius: 8px;
     /*justify-content: center;*/
-    background-color: rgb(28, 204, 204);
+    background-color: #91C499;
     /*box-sizing: border-box;*/
     
 }
@@ -235,6 +235,7 @@ main {
     color: black;
 }
 
+
 /*ul{
     display: block;
     margin-block-start: 1em;
@@ -243,9 +244,10 @@ main {
     margin-inline-end: 0;
     padding-inline-start: 38px;
 }*/
-.li a {
-    color: black;
-    background-color: blanchedalmond;
+
+.card a {
+    color: #808F85;
+    /*background-color: blanchedalmond;*/   
     /*margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0;
@@ -255,7 +257,13 @@ main {
     text-align: center;
     justify-content: center;
     padding-inline-start: 38px;
+    margin-bottom: 50px;
 }
+
+.card a:hover {
+    color: #CFD11A;
+}
+
 /*-----SECTION CARD WEB DEV RESOURCES START-----*/
 
 
@@ -264,7 +272,7 @@ main {
 
 /*----------FOOTER START----------*/
 footer {
-    background-color: rgb(87, 86, 86);
+    background-color: #595959;
     color: white;
     padding: 2rem;
     text-align: center;
