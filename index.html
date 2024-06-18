@@ -20,22 +20,20 @@
         </nav>
     </header>
     <main>
-        <section class="card" id="about-me">
+        <section class="card">
             <div class="about-me">
                 <h2>About Me</h2>
             </div>
-            <div class="me-info"></div>
+            <div class="me-info">
                 <p> My name is Tanya Trampp. I lived most of my life in New Mexico. I am a stay-at-home mom. I have 6 children with ages ranging from 12-32. I homeschool my two youngest children. Bookkeeping is another job I have. My husband and I spend as much time together and with the kids as we can.</p>
             </div>
             <div class="selfie">
-                <img id="photo-me" src="./images/profile.jpg" alt="Picture of Me">
+                <img id="photo-me" src="./images/profile.jpg" alt="Picture of Me" width="200" height="138">
             </div>
             <div class="place-home">
-                <h2>Kirtland, New Mexico</h2>
-            </div>
-            <div class="nm-info">
+                <h3>Kirtland, New Mexico</h3>
                 <figure>
-                    <img id="nm-flag" src="./images/nm-flag.png" alt="NM State Flag">
+                    <img id="nm-flag" src="./images/nm-flag.png" alt="NM State Flag" width="200">
                     <figcaption>New Mexico State Flag</figcaption>
                 </figure>
             </div>
@@ -43,25 +41,23 @@
                 <p>New Mexico is one of the Four Corner Region states, the south eastern most state. NM a heavily blended culture state, with large numbers of Native American, Hispanic, and Anglo. NM is one of the most southern Rocky Mountain state. New Mexico's elevation ranges from 2,842 ft and 13,161 ft above sea level, with the average being about 4,700 ft above sea level. New Mexico is well known for it's chile. A common question in NM is "Red, Green, or Christmas?".</p>
             </div>
         </section>
-        <section class="card" id="web-dev-resources">
-            <div class="web-dev-resources">
-                <h2>Web Dev Resources</h2>
-            </div>
-            <class="resources">
-                <id="resource-links">
-                    <li><a href="https://developer.mozilla.org/en-US/" alt="mdn"></a></li>
-                    <li><a href="https://www.w3schools.com/" alt="w3schools"></a></li>
-                    <li><a href="https://coolors.co/" alt="color-generator"></a></li>
-                    <li><a href="https://www.siegemedia.com/contrast-ratio" alt="contrast-ratio"></a></li>
-                    <li><a href="https://code.visualstudio.com/docs" alt="VS-Code"></a></li>
-                    <li><a href="https://codepip.com/games/" alt="coding-games"></a></li>
-                    <li><a href="https://gridbyexample.com/learn/" alt="coding-help"></a></li>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <div class="web-resources">
+                <ul id="resource-links">
+                    <li><a href="https://developer.mozilla.org/en-US/">mdn</a></li>
+                    <li><a href="https://www.w3schools.com/">w3schools</a></li>
+                    <li><a href="https://coolors.co/">color-generator</a></li>
+                    <li><a href="https://www.siegemedia.com/contrast-ratio">contrast-ratio</a></li>
+                    <li><a href="https://code.visualstudio.com/docs">VS-Code</a></li>
+                    <li><a href="https://codepip.com/games/">coding-games</a></li>
+                    <li><a href="https://gridbyexample.com/learn/">coding-help</a></li>
                 </ul>
             </div>
         </section>
     </main>
     <footer>
-        <p>©2024 👀 Tanya Trampp 👀 New Mexico, USA</p>                   <!-- windows + ; for emojis-- remember this woman! -->
+        <p>©2024 👀 Tanya Trampp 👀 New Mexico, USA</p>                   <!-- windows + ; for emojis- remember this woman! -->
         <p>Last Modified: <span id="date-modified"></span></p>             <!-- 1st time using JavaScript, yay!-->
         <script>
             let text = document.lastModified;
