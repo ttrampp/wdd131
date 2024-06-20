@@ -1,0 +1,31 @@
+/* this could be fun */
+
+/* font styles */
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+  
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px thin #302F4D;
+    padding: 5px;
+    background-color: #A0CCDA;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+section {
+    padding: 1rem;
+    background-color: #A0CCDA;
+}
