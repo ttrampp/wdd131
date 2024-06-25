@@ -8,6 +8,7 @@
     <meta name="author" content="Tanya Trampp>">
     <link rel="stylesheet" href="temples.css">
     <link rel="stylesheet" href="temples-large.css">
+    <script src="scripts/temples.js"></script>
 </head>
 <body>
     <header>
@@ -65,6 +66,11 @@
     </main>
     <footer>
         <p>©2024 👀 Tanya Trampp 👀 New Mexico, USA</p>                 <!-- windows + "." REMEMBER this woman -->
+        <p>Last Modified: <span id="date-modified"></span></p>             <!-- 1st time using JavaScript, yay!-->
+        <script>
+            let text = document.lastModified;
+            document.getElementById("date-modified").innerHTML = text;
+        </script>
     </footer>
 </body>
 </html>
