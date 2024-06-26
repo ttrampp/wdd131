@@ -10,103 +10,53 @@
     --color-five: #d7d7db;
 }
 
-body {
-    background-color: #F3E3CE;
-    color: #8390b6;
-    display: flex;
-}
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
+body {
+	font-family: "montserrat", sans-serif;
+}
+
+/* mobile **************************/
 header {
-    background-color: #424F67;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    border: double #424F67;
-    margin: 0 auto;
+	background-color: #d7d7db;
+	display: grid;
+	grid-gap: 1rem;
+	padding: 20px;
+	border: 1px double #8390b6;
+	box-shadow: 0 0 30px #222916;
+}
+
+header,
+main {
+	margin: 0 auto;
 }
 
 h1 {
-    font-size: 2rem;
+	font-size: 2rem;
 }
 
 nav {
-    background-color: #8390b6;
-    margin: 0 auto;
-    max-width: 808px;
+	background-color: #69675C;
+	display: flex;
+	flex-direction: column
 }
 
-nav ul {
-    display: block;
-    background-color: #8390b6;
-    color: #F3E3CE;
-    text-align: center;
-    padding: 20px;
-    text-decoration: none;
+nav a {
+	display: block;
+	color: #d7d7db;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
 }
 
 nav a:hover {
-    color: brown;
+	text-decoration: underline double;
 }
 
-
-
-
-
-main {
-    /*max-width: 840px;*/
-    margin: 0 auto;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 1em;
-    background-color: #424F67;
-    /*padding: 10px;*/
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-template-columns: auto auto auto;    
-    margin-top: 20px;
-}
-
-main h2 {
-    /*max-width: 90%;*/
-    display: grid;
-    text-align: center;
-    background-color: #E3F3F7;
-    /*padding: 10px;*/
-    grid-column: span 3;
-    grid-row: span 3;
-    border: double #424F67;
-    
-}
-
-
-.temples figure img {
-    max-width: 100%;
-    margin: 0 auto;
-    display: grid;
-    grid-gap: 1em;
-    background-color: #E3F3F7;
-    padding: 5px;
-    grid-column: span 3;
-    height: 150px;
-    width: auto;
-}
-
-
-.temples figcaption {
-    max-width: 95%;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 20px;
-    padding: 10px;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    width: 200px;
-    text-align: center;
+.active {
+	color: brown;
 }
