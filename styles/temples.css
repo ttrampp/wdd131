@@ -48,9 +48,10 @@ main {
 }*/
 
 .pages {
-	background-color: #69675C;
+	background-color: #222916;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	position: relative;
 }
 
 .pages a {
@@ -80,14 +81,14 @@ nav a:hover {
 	color: brown;
 }*/
 
-.temples {
+/*.temples {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	background-color: #222916;
 	padding: 50px;
 	gap: 10px;
 	color: #F3E3CE;
-}
+}*/
 
 footer {
 	background-color: #595959;
