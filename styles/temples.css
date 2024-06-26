@@ -13,15 +13,17 @@
     --color-five: #d7d7db;
 }
 
-* {
+/** {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
+}*/
 
 body {
 	font-family: "montserrat", sans-serif;
 	background-color: #8390B6;
+	margin: 0;
+	padding: 0;
 }
 
 /* mobile **************************/
@@ -35,7 +37,7 @@ header {
 	border: 1px double #222916;
 	box-shadow: 0 0 30px #d7d7db;
 	position: relative;
-	height: 74px;
+	/*height: 74px;*/
 }
 
 /*header,

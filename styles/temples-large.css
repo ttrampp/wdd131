@@ -4,6 +4,7 @@
 @media only screen and (min-width: 505px) {
 
     .pages {
+        display: flex;
         justify-content: flex-end;
         flex-direction: row;
         width: auto;
@@ -28,7 +29,7 @@
 
     .temples {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         background-color: #222916;
         padding: 50px;
         gap: 10px;
