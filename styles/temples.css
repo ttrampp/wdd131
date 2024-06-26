@@ -79,6 +79,10 @@ nav a:hover {
 	content: ❌;
 }
 
+nav {
+	display: block;
+}
+
 /*.active {
 	color: brown;
 }*/
