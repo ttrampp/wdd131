@@ -28,34 +28,38 @@ body {
 header {
 	background-color: #222916;
 	color: #f3e3ce;
-	display: grid;
-	grid-gap: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	padding: 20px;
 	border: 1px double #222916;
 	box-shadow: 0 0 30px #d7d7db;
+	position: relative;
+	height: 74px;
 }
 
-header,
+/*header,
 main {
 	margin: 0 auto;
-}
+}*/
 
-h1 {
+/*h1 {
 	font-size: 2rem;
-}
+}*/
 
-nav {
+.pages {
 	background-color: #69675C;
 	display: flex;
-	flex-direction: column
+	flex-direction: column;
 }
 
-nav a {
+.pages a {
 	display: block;
 	color: #d7d7db;
 	text-align: center;
 	padding: 1rem;
 	text-decoration: none;
+	height: auto;
 }
 
 nav a:hover {
@@ -64,9 +68,17 @@ nav a:hover {
 	font-weight: bold;
 }
 
-.active {
-	color: brown;
+.hamburger::before {
+	content: ☰ ;  
 }
+
+.hamburger.open::before {
+	content: ❌;
+}
+
+/*.active {
+	color: brown;
+}*/
 
 .temples {
 	display: grid;
