@@ -1,11 +1,7 @@
-@media only screen and (min-width: 505px) {
+/* the temples-large.css file is used for the larger view */
 
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 5px;
-    }
+
+@media only screen and (min-width: 505px) {
 
     .pages {
         justify-content: flex-end;
@@ -15,6 +11,7 @@
 
     .pages a {
         flex: 1 1 100%;
+        text-align: center;
     }
 
     .pages a:hover {
@@ -24,7 +21,7 @@
 
     main {
         padding: 1rem;
-        max-width: 1200px;
+        max-width: 1000px;
         margin: 0 auto;
         text-align: center;
     }
@@ -32,8 +29,14 @@
     .temples {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        background-color: aqua;
-
+        background-color: #222916;
+        padding: 50px;
+        gap: 10px;
+        color: #F3E3CE;
     }
+
+    /*.temples {
+        grid-template-columns: repeat(3, 1fr);
+    }*/
 
 }

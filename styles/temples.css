@@ -1,3 +1,6 @@
+/* The temples.css file is used for the mobile view*/
+/*Most of your CSS should be located in the temples.css file in mobile first design*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
@@ -18,16 +21,18 @@
 
 body {
 	font-family: "montserrat", sans-serif;
+	background-color: #8390B6;
 }
 
 /* mobile **************************/
 header {
-	background-color: #d7d7db;
+	background-color: #222916;
+	color: #f3e3ce;
 	display: grid;
 	grid-gap: 1rem;
 	padding: 20px;
-	border: 1px double #8390b6;
-	box-shadow: 0 0 30px #222916;
+	border: 1px double #222916;
+	box-shadow: 0 0 30px #d7d7db;
 }
 
 header,
@@ -54,9 +59,28 @@ nav a {
 }
 
 nav a:hover {
-	text-decoration: underline double;
+	text-decoration: underline;
+	font-size: larger;
+	font-weight: bold;
 }
 
 .active {
 	color: brown;
+}
+
+.temples {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	background-color: #222916;
+	padding: 50px;
+	gap: 10px;
+	color: #F3E3CE;
+}
+
+footer {
+	background-color: #595959;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin: 0;
 }
