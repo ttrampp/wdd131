@@ -51,9 +51,13 @@ main {
 
 .pages {
 	background-color: #222916;
-	display: flex;
-	flex-direction: row;
+	display: flex;					/* display: none takes links away in large and small*/
+	flex-direction: row;			
 	position: relative;
+	list-style: none;
+	width: 100%;
+	padding: 0;
+	margin: 0;
 }
 
 .pages a {
@@ -63,6 +67,10 @@ main {
 	padding: 1rem;
 	text-decoration: none;
 	height: auto;
+}
+
+.pages.open {
+	display: flex;
 }
 
 nav a:hover {
@@ -79,22 +87,27 @@ nav a:hover {
 	content: ❌;
 }
 
+.open {
+	background-color: #222916;
+	width: 100%;
+	display: none;
+	flex-direction: column;
+	gap: 5rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.show {
+	display: block;
+	position: absolute;
+	z-index: 8;
+	background-color: #d7d7db;
+}
+
 nav {
 	display: block;
 }
 
-/*.active {
-	color: brown;
-}*/
-
-/*.temples {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	background-color: #222916;
-	padding: 50px;
-	gap: 10px;
-	color: #F3E3CE;
-}*/
 
 footer {
 	background-color: #595959;
