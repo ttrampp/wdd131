@@ -1,4 +1,6 @@
 main {
     display: grid;
     grid-column: span 2;
+    font-variant: small-caps;
 }
+
