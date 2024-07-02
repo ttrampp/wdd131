@@ -20,7 +20,6 @@ body {
     justify-content: center;
     align-items: center;
     background-color: darkcyan;
-    border: double;
 }
 
 header {
@@ -36,27 +35,43 @@ header {
     width: 95vw;
 }
 
+.sm {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+}
+
 /********** Data **********/
 .card__content {
     display: grid;
-    grid-column: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-column: 1fr 1fr;*/
 }
 
 .card {
     background: bisque;
-    box-shadow: 0px 2px 10px var(--clr-primary);
-    border-radius: 2.5rem;
+
+    border-radius: 2rem;
     border: double;
-    position: relative;
-    min-width: 350px;
+    /*position: relative;*/
+    /*min-width: 350px;*/
     text-align: center;
-    padding: 1rem;
-    margin-top: 10px;
+    padding: 0.5rem;
+    margin-top: 5px;
+    margin-right: auto;
+    /**/
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    max-width: 350px;
 }
 
 .card__header {
     margin: 1rem 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: cursive;
     color: var(--clr-primary);
 }
@@ -87,35 +102,41 @@ li:nth-child(even) {
     font-weight: bold;
 }
 
-.card__item::before{
+/*.card__item::before{
     font-weight: 900;
     font-size: 1.3rem;
     color: var(--clr-primary);
     position: relative;
     vertical-align: middle;
     margin-right: 1rem;
-}
+}*/
 
 /********** Weather **********/
 .card2__content {
     display: grid;
-    grid-column: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .card2 {
     background: bisque;
-    box-shadow: 0px 2px 10px var(--clr-primary);
-    border-radius: 2.5rem;
+    border-radius: 2rem;
     border: double;
-    position: relative;
-    min-width: 350px;
+    /*position: relative;*/
+    /*min-width: 350px;*/
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
+    margin-top: 5px;
+
+    margin-left: auto;
+    /**/
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+    max-width: 350px;
 }
 
 .card2__header {
     margin: 1rem 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: cursive;
     color: var(--clr-primary);
 }
@@ -146,13 +167,20 @@ li:nth-child(even) {
     font-weight: bold;
 }
 
-.card2__item::before{
+/*.card2__item::before{
     font-weight: 900;
     font-size: 1.3rem;
     color: var(--clr-primary);
     position: relative;
     vertical-align: middle;
     margin-right: 1rem;
+}*/
+
+.icon {
+    position: absolute;
+    width: 174px;
+    padding: 80px;
+    align-items: right;
 }
 
 
@@ -160,26 +188,28 @@ li:nth-child(even) {
 footer {
     background-color: #595959;
     color: white;
-    padding: 2rem;
+    padding: 10px;
     text-align: center;
-    margin: 0;
+    margin: 10px 5px;
+    height: 74px;
+    margin-bottom: 20px;
 }
 
-.sm {
-    position: relative;
-    width: 100%;
-    object-fit: cover;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    height: 100%;
-    padding-top: 25px;
 
-}
+/********** mobile **********/
+@media screen and (max-width: 808px) {
+    
+    .sm {
+        position: relative;
+        height: auto;
+        padding-top: 25px;
+    }
 
-.icon {
-    position: absolute;
-    width: 174px;
-    padding: 80px;
-    align-items: right;
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    .card, .card2 {
+        grid-column: 1 / span 1;
+    }
 }
