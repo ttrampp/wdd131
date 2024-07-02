@@ -1,0 +1,185 @@
+/*// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900*/
+
+/*.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}*/
+
+:root {
+    --font-family: 'Montserrat', sans-serif;
+    --background-color: #d7d7d7;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    height: 100%vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: darkcyan;
+    border: double;
+}
+
+header {
+    background-color: chocolate;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bolder;
+    height: 74px;
+    font-size: 26px;
+    padding-top: 38px;
+    width: 95vw;
+}
+
+/********** Data **********/
+.card__content {
+    display: grid;
+    grid-column: 1fr 1fr;
+}
+
+.card {
+    background: bisque;
+    box-shadow: 0px 2px 10px var(--clr-primary);
+    border-radius: 2.5rem;
+    border: double;
+    position: relative;
+    min-width: 350px;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 10px;
+}
+
+.card__header {
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-family: cursive;
+    color: var(--clr-primary);
+}
+
+.card__list{
+    margin: 2rem;
+    list-style: none;
+    display: grid;
+    grid-column: 1/4;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1px;
+}
+
+li:nth-child(odd) {
+    background: gray;
+    text-align: right;
+}
+
+li:nth-child(even) {
+    background: lightgray;
+    text-align: left;
+}
+
+.card__item {
+    margin: .5rem;
+    font-size: 1rem;
+    text-align: odd right;
+    font-weight: bold;
+}
+
+.card__item::before{
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: var(--clr-primary);
+    position: relative;
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+
+/********** Weather **********/
+.card2__content {
+    display: grid;
+    grid-column: 1fr 1fr;
+}
+
+.card2 {
+    background: bisque;
+    box-shadow: 0px 2px 10px var(--clr-primary);
+    border-radius: 2.5rem;
+    border: double;
+    position: relative;
+    min-width: 350px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card2__header {
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-family: cursive;
+    color: var(--clr-primary);
+}
+
+.card2__list{
+    margin: 2rem;
+    list-style: none;
+    display: grid;
+    grid-column: 1/4;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1px;
+}
+
+.card2 li:nth-child(odd) {
+    background: hotpink;
+    text-align: right;
+}
+
+.card2 li:nth-child(even) {
+    background: pink;
+    text-align: left;
+}
+
+.card2__item {
+    margin: .5rem;
+    font-size: 1rem;
+    text-align: odd right;
+    font-weight: bold;
+}
+
+.card2__item::before{
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: var(--clr-primary);
+    position: relative;
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+
+
+/********** footer **********/
+footer {
+    background-color: #595959;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin: 0;
+}
+
+.sm {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    padding-top: 25px;
+
+}
+
+.icon {
+    position: absolute;
+    width: 174px;
+    padding: 80px;
+    align-items: right;
+}

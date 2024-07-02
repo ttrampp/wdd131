@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="Place Page - WDD 131 - Dynamic Web Fundamentals - Tanya Trampp">
+    <meta name="author" content="Tanya Trampp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js"></script>
+</head>
+<body>
+    <header>place that i can't decide yet</header>
+    <main>
+        <picture>
+            <source srcset="images/hero-large.webp" media="min-width: 500px">
+            <img src="images/hero-small.webp" alt="Farmington New Mexico Temple" width="500" height="250" class="sm">
+        </picture>
+        <div class="card">
+            <div class="card__content">
+                <h2 class="card__header">Data</h2>
+                    <ul class="card__list">
+                        <li class="card__item">Area:</li>
+                        <li class="card__item">info</li>
+                        <li class="card__item">Population:</li>
+                        <li class="card__item">info</li>
+                        <li class="card__item">Capital:</li>
+                        <li class="card__item">info</li>
+                        <li class="card__item">Languages:</li>
+                        <li class="card__item">info</li>
+                        <li class="card__item">Currency:</li>
+                        <li class="card__item">info</li>
+                        <li class="card__item">Time Zone:</li>
+                        <li class="card__item">info</li>
+                        <li class="card__item">Calling Code:</li>
+                        <li class="card__item">info</li>
+                        <li class="card__item">Internet TLD:</li>
+                        <li class="card__item">info</li>
+                    </ul>
+            </div>
+        </div>
+        <div class="card2">
+            <div class="card2__content">
+                <h2 class="card2__header">Weather</h2>
+                <img src="images/rain-weather-and-season-logo-icon.webp" alt="Weather Icon" class="icon">
+                    <ul class="card2__list">
+                        <li class="card2__item">Temperature:</li>
+                        <li class="card2__item">79 degree</li>
+                        <li class="card2__item">Precipitation:</li>
+                        <li class="card2__item">24% °F</li>
+                        <li class="card2__item">Humidity:</li>
+                        <li class="card2__item">44%</li>
+                        <li class="card2__item">Wind:</li>
+                        <li class="card2__item">6 mph</li>
+                    </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>©2024 👀 Tanya Trampp 👀 New Mexico, USA</p>                   <!-- windows + ; for emojis- remember this woman! -->
+        <p>Last Modified: <span id="date-modified"></span></p>             <!-- 1st time using JavaScript, yay!-->
+        <script>
+            let text = document.lastModified;
+            document.getElementById("date-modified").innerHTML = text;
+        </script>
+    </footer>
+</body>
+</html>
