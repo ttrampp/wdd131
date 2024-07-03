@@ -10,18 +10,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
     <script src="scripts/place.js"></script>
 </head>
 <body>
-    <header>Kirtland, New Mexico</header>
+    <header>Kirtland, New Mexico USA</header>
     <main>
-        <picture>
-            <source srcset="images/farmington_612x612.webp" media="min-width: 505px">
-            <img src="images/farmington_400.webp" alt="Farmington New Mexico Temple" width="500" height="250" class="sm">
-        </picture>
-        <div class="card">
-            <div class="card__content">
-                <h2 class="card__header">Data</h2>
+        <div class="image-container">
+            <picture>
+                <source srcset="images/farmington_612x612.webp" media="min-width: 505px">
+                <img src="images/farmington_400.webp" alt="Farmington New Mexico Temple" class="sm">
+            </picture>
+            <div class="card">
+                <div class="card__content">
+                    <h2 class="card__header">Data</h2>
                     <ul class="card__list">
                         <li class="card__item">Area:</li>
                         <li class="card__item">11.9 square miles</li>
@@ -38,34 +40,35 @@
                         <li class="card__item">Calling Code:</li>
                         <li class="card__item">1+ 505</li>
                         <li class="card__item">Internet TLD:</li>
-                        <li class="card__item">info</li>
+                        <li class="card__item">.com</li>
                     </ul>
+                </div>
             </div>
-        </div>
-        <div class="card2">
-            <div class="card2__content">
-                <h2 class="card2__header">Weather</h2>
-                <img src="images/rain-weather-and-season-logo-icon.webp" alt="Weather Icon" class="icon">
+            <div class="card2">
+                <div class="card2__content">
+                    <h2 class="card2__header">Weather 🌦</h2>
+                    <img src="images/rain-weather-and-season-logo-icon.webp" alt="Weather Icon" class="icon">
                     <ul class="card2__list">
                         <li class="card2__item">High Temp:</li>
-                        <li class="card2__item">92 &deg</li>
+                        <li class="card2__item">92 &degF</li>
                         <li class="card2__item">Low Temp:</li>
-                        <li class="card2__item">61 &deg</li>
+                        <li class="card2__item">61 &degF</li>
                         <li class="card2__item">Precipitation:</li>
-                        <li class="card2__item">0% °F</li>
+                        <li class="card2__item">0%</li>
                         <li class="card2__item">Humidity:</li>
                         <li class="card2__item">28%</li>
                         <li class="card2__item">Wind:</li>
                         <li class="card2__item">13 mph</li>
-                        <li class="card2__item">Wind chill: <span id="Windchill"></span>&deg;</li>
-                        <li class="card2__item">.com</li>
+                        <li class="card2__item">Wind chill: <span id="WindChill"></span>&deg;F</li>
+                        <li class="card2__item"></li>
                     </ul>
+                </div>
             </div>
         </div>
     </main>
     <footer>
-        <p>©2024 👀 Tanya Trampp 👀 New Mexico, USA</p>                   <!-- windows + ; for emojis- remember this woman! -->
-        <p>Last Modified: <span id="date-modified"></span></p>             <!-- 1st time using JavaScript, yay!-->
+        <p>©2024 👀 Tanya Trampp 👀 New Mexico, USA</p>
+        <p>Last Modified: <span id="date-modified"></span></p>
         <script>
             let text = document.lastModified;
             document.getElementById("date-modified").innerHTML = text;

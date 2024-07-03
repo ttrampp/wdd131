@@ -1,31 +1,19 @@
-/*// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900*/
-
-/*.montserrat-<uniquifier> {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}*/
-
-import math 
-
 :root {
     --font-family: 'Montserrat', sans-serif;
     --background-color: #0b3003;
     --second-background-color: #669bbc;
-
+    --third-background-color: #6f2a38;
 }
-
+ 
 body {
     font-family: "Montserrat", sans-serif;
-    height: 100%vh;
+    height: 100vh;
     display: grid;
     justify-content: center;
     align-items: center;
-    background-color: #0b3003;
+    background-color: #6f2a38;
 }
-
+ 
 header {
     background-color: #0b3003;
     color: #dedec4;
@@ -38,161 +26,79 @@ header {
     padding-top: 38px;
     width: 95vw;
 }
-
-.sm {
+ 
+.image-container {
     position: relative;
     width: 100%;
+    max-width: 1200px;
+    margin: 20px;
+}
+ 
+.sm {
+    width: 100%;
     object-fit: cover;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    height: 100%;
+    height: auto;
 }
-
-/********** Data **********/
-.card__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /*grid-column: 1fr 1fr;*/
+ 
+.card, .card2 {
+    background: #dedec4;
+    border-radius: 2rem;
+    border: double;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    width: 300px;
+    max-width: 90%;
 }
-
+ 
 .card {
-    background: #dedec4;
-
-    border-radius: 2rem;
-    border: double;
-    /*position: relative;*/
-    /*min-width: 350px;*/
-    text-align: center;
-    padding: 0.5rem;
-    margin-top: 5px;
-    margin-right: auto;
-    /**/
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
-    max-width: 350px;
+    top: 10%;
+    left: 10%;
 }
-
-.card__header {
-    margin: 1rem 0;
-    font-size: 1.5rem;
-    font-family: cursive;
-    color: var(--clr-primary);
-}
-
-.card__list{
-    margin: 2rem;
-    list-style: none;
-    display: grid;
-    grid-column: 1/4;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1px;
-}
-
-li:nth-child(odd) {
-    background: #0b3003;
-    text-align: right;
-    color: #dedec4;
-}
-
-li:nth-child(even) {
-    background: #dedec4;
-    text-align: left;
-    color: #0b3003;
-}
-
-.card__item {
-    margin: .5rem;
-    font-size: 1rem;
-    text-align: odd right;
-    font-weight: bold;
-}
-
-/*.card__item::before{
-    font-weight: 900;
-    font-size: 1.3rem;
-    color: var(--clr-primary);
-    position: relative;
-    vertical-align: middle;
-    margin-right: 1rem;
-}*/
-
-/********** Weather **********/
-.card2__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
+ 
 .card2 {
-    background: #dedec4;
-    border-radius: 2rem;
-    border: double;
-    /*position: relative;*/
-    /*min-width: 350px;*/
-    text-align: center;
-    padding: 0.5rem;
-    margin-top: 5px;
-
-    margin-left: auto;
-    /**/
-    grid-column: 3 / span 1;
-    grid-row: 3 / span 1;
-    max-width: 350px;
+    top: 10%;
+    right: 10%;
 }
-
-.card2__header {
+ 
+.card__header, .card2__header {
     margin: 1rem 0;
     font-size: 1.5rem;
     font-family: cursive;
-    color: var(--clr-primary);
-}
-
-.card2__list{
-    margin: 2rem;
-    list-style: none;
-    display: grid;
-    grid-column: 1/4;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1px;
-}
-
-.card2 li:nth-child(odd) {
     background: #0b3003;
-    text-align: right;
     color: #dedec4;
 }
-
-.card2 li:nth-child(even) {
-    background: #dedec4;
-    text-align: left;
+ 
+.card__list, .card2__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    padding: 0;
+}
+ 
+.card__item, .card2__item {
+    font-size: 1rem;
+    font-weight: bold;
     color: #0b3003;
 }
-
-.card2__item {
-    margin: .5rem;
-    font-size: 1rem;
-    text-align: odd right;
-    font-weight: bold;
+ 
+.card__item:nth-child(odd), .card2__item:nth-child(odd) {
+    text-align: right;
 }
-
-/*.card2__item::before{
-    font-weight: 900;
-    font-size: 1.3rem;
-    color: var(--clr-primary);
-    position: relative;
-    vertical-align: middle;
-    margin-right: 1rem;
-}*/
-
+ 
+.card__item:nth-child(even), .card2__item:nth-child(even) {
+    text-align: left;
+}
+ 
 .icon {
     position: absolute;
     width: 174px;
     padding: 80px;
     align-items: right;
 }
-
-
-/********** footer **********/
+ 
 footer {
     background-color: #0b3003;
     color: white;
@@ -202,22 +108,21 @@ footer {
     height: 74px;
     margin-bottom: 20px;
 }
-
-
-/********** mobile **********/
+ 
 @media screen and (max-width: 808px) {
-    
-    .sm {
-        position: relative;
-        height: auto;
-        padding-top: 25px;
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-
-    .main {
-        grid-template-columns: 1fr;
-    }
-
+ 
     .card, .card2 {
-        grid-column: 1 / span 1;
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        width: 100%;
+        margin: 10px 0;
     }
 }
+ 
