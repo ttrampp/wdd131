@@ -14,7 +14,7 @@ body {
     background-color: #6f2a38;
 }
  
-header {
+header h1 {
     background-color: #0b3003;
     color: #dedec4;
     display: flex;
