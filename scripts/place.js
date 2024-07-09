@@ -9,7 +9,7 @@
 
 function getLastModified () {
     const lastModified = document.lastModified;
-    document.getElementById("lastModified").textContent = `Last Modified: ${lastModified}`;
+    document.getElementById("date-modified").innerHTML = text;
 }
 
 
