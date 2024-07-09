@@ -17,5 +17,6 @@ function calculateWindChill(temp, wSpeed) {
         {return 'N/A'}
 }
 
+
 var windChill = calculateWindChill(92, 13); 
 document.getElementById("windChill").innerHTML= windChill;
