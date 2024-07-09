@@ -7,10 +7,10 @@
 //</script>                                                     THIS CREATES ERROR DEFER
 //TRYING NEW FUNCTION INSTEAD
 
-function getLastModified () {
-    const lastModified = document.lastModified;
-    document.getElementById("date-modified").innerHTML = text;
-}
+////function getLastModified () {
+    ////const lastModified = document.lastModified;
+    ////document.getElementById("date-modified").innerHTML = text;
+////}
 
 
 
@@ -52,7 +52,8 @@ function getLastModified () {
 var temp = 92;
 var wSpeed = 13;
 
-var chill = Math.round(35.74 + 0.6215 * temp - 35.75 * Math.pow(wSpeed,0.16) + 0.4275 * temp * Math.pow(wSpeed,0.16)).toFixed(0);
 
-var windChill = chill;
+var windChill = Math.round(35.74 + 0.6215 * temp - 35.75 * Math.pow(wSpeed,0.16) + 0.4275 * temp * Math.pow(wSpeed,0.16)).toFixed(0);
+
+var windChill = Math.round(windChill);
 document.getElementById("windChill").innerHTML = windChill;
