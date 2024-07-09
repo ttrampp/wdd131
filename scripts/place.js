@@ -7,10 +7,10 @@
 //</script>                                                     THIS CREATES ERROR DEFER
 //TRYING NEW FUNCTION INSTEAD
 
-////function getLastModified () {
-    ////const lastModified = document.lastModified;
-    ////document.getElementById("date-modified").innerHTML = text;
-////}
+function getLastModified () {
+    const lastModified = document.lastModified;
+    document.getElementById("date-modified").innerHTML = text;
+}
 
 
 
