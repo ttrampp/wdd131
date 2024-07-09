@@ -1,12 +1,21 @@
 // last date modified
-<script>
-    let text = document.lastModified;
-    document.getElementById("date-modified").innerHTML = text;
-</script>
+
+
+//<script>                                                      THIS CREATES ERROR DEFER
+//    let text = document.lastModified;
+//    document.getElementById("date-modified").innerHTML = text;
+//</script>                                                     THIS CREATES ERROR DEFER
+//TRYING NEW FUNCTION INSTEAD
+
+function getLastModified () {
+    const lastModified = document.lastModified;
+    document.getElementById("lastModified").textContent = `Last Modified: ${lastModified}`;
+}
+
+
+
 
 // windchill factor
-
-
 
 const temp = 92;
 const wSpeed = 13;
