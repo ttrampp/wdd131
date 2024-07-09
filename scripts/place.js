@@ -17,25 +17,25 @@ function getLastModified () {
 
 // windchill factor
 
-const temp = 92;
-const wSpeed = 13;
+//const temp = 92;
+//const wSpeed = 13;
 
-function calculateWindChill(temp, wSpeed) {
-    return 13.12 + (0.6215 * temp) - (11.37 * Math.pow(wSpeed, 0.16)) + (0.3965 * temp * Math.pow(wSpeed, 0.16));
-}
+//function calculateWindChill(temp, wSpeed) {
+  //  return 13.12 + (0.6215 * temp) - (11.37 * Math.pow(wSpeed, 0.16)) + (0.3965 * temp * Math.pow(wSpeed, 0.16));
+//}
 
 
-function displayWindChill(temp, wSpeed) {
-    var temp= 92;
-    var wSpeed= 13;
-    if (temp <=50 && wSpeed >=3){
+//function displayWindChill(temp, wSpeed) {
+  //  var temp= 92;
+    //var wSpeed= 13;
+    //if (temp <=50 && wSpeed >=3){
       //  var windChill= (35.74 + (0.6215 * temp))-(35.75 * Math.pow(wSpeed,0.16)) + (0.4275*temp*Math.pow(wSpeed,0.16));
         //var windChill= Math.round(windChill);
         //return windChill}
-        windChill = calculateWindChill(temp, wSpeed);
-    }
-    document.getElementById("windChill").innerHTML = windChill !== "N/A" ? "${WindChill}" : windChill;
-}
+      //  windChill = calculateWindChill(temp, wSpeed);
+    //}
+    //document.getElementById("windChill").innerHTML = windChill !== "N/A" ? "${WindChill}" : windChill;
+//}
     //else 
 //        {return 'N/A'}
 //}
@@ -46,4 +46,13 @@ function displayWindChill(temp, wSpeed) {
 
 
 
-displayWindChill(temp, wSpeed);
+//displayWindChill(temp, wSpeed);
+
+
+var temp = 92;
+var wSpeed = 13;
+
+var chill = Math.round(35.74 + 0.6215 * temp - 35.75 * Math.pow(wSpeed,0.16) + 0.4275 * temp * Math.pow(wSpeed,0.16)).toFixed(0);
+
+var windChill = chill;
+document.getElementById("windChill").innerHTML = windChill;
