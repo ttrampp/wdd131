@@ -30,7 +30,7 @@ header {
 .image-container {
     position: relative;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1900px;
     margin: 20px;
 }
  
@@ -51,14 +51,15 @@ header {
     max-width: 90%;
 }
  
+
 .card {
-    top: 10%;
-    left: 10%;
+    top: 5%;
+    left: 5%;
 }
  
 .card2 {
-    top: 10%;
-    right: 10%;
+    top: 40%;
+    right: 5%;
 }
  
 .card__header, .card2__header {
@@ -67,6 +68,14 @@ header {
     font-family: cursive;
     background: #0b3003;
     color: #dedec4;
+}
+
+.icon {
+    width: 20px;
+}
+
+.cloud {
+    width: 60px;
 }
  
 .card__list, .card2__list {
