@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="author" content="Tanya Trampp">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Lazy Load Activity</h1>
+    </header>
+    <main>
+        <picuters><img src="images/farmington_new_mexico_temple_exterior_rendering.webp" alt="placeholder temple image" loading="lazy" width="400" height="600"></picuters>
+        <picuters><img src="images/abuquerque_temple_lds.jpeg" alt="placeholder temple image" loading="lazy" width="400" height="600"></picuters>
+        <picuters><img src="images/monticello_utah_temple.jpeg" alt="placeholder temple image" loading="lazy" width="400" height="600"></picuters>
+        <picuters><img src="images/manti_temple.jpeg" alt="placeholder temple image" loading="lazy" width="400" height="600"></picuters>
+        <picuters><img src="images/mesa_temple_reflection.jpeg" alt="placeholder temple image" loading="lazy" width="400" height="600"></picuters>
+        <picuters><img src="images/draper_utah_temple.jpeg" alt="placeholder temple image" loading="lazy" width="400" height="600"></picuters>
+    </main>
+    <footer>
+        <p>©2024 👀 Tanya Trampp 👀 New Mexico, USA</p> <!-- windows + "." REMEMBER this woman -->
+        <p>Last Modified: <span id="date-modified"></span></p> <!-- 1st time using JavaScript, yay!-->
+        <script>
+            let text = document.lastModified;
+            document.getElementById("date-modified").innerHTML = text;
+        </script>
+    </footer>
+</body>
+
+</html>
