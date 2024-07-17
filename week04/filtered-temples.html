@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="Temple Picture Album Activity">
+    <meta name="author" content="Tanya Trampp>">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <script src="scripts/filtered-temples.js"></script>
+    
+</head>
+
+<body>
+    <header>
+            <h1>Temple Photo Album</h1>
+            <button id="hamburger">☰</button>   <!--change class to id because i only want that container-->
+            <nav id="pages">                
+                    <a href="#" onclick="toggleActive(this)" ontouchstart="toggleActive(this)">Home</a>
+                    <a href="#">Old</a>
+                    <a href="#">New</a>
+                    <a href="#">Large</a>
+                    <a href="#">Small</a>
+            </nav>
+    </header>
+
+    <main>
+        <h2 id="mainheading"></h2>
+        <div class="templelist" id="templealbum">
+            <!--<figure>
+                <img src="/images/farmington-new-mexico-temple-22829-main.jpg" alt="Farmington New Mexico" width="250"
+                    height="200">
+                <figcaption>Farmington New Mexico</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/abuquerque_temple_lds.jpeg" alt="Albuquerque New Mexico" width="250" height="200">
+                <figcaption>Albuquerque New Mexico</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/monticello_utah_temple.jpeg" alt="Monticello Utah" width="250" height="200">
+                <figcaption>Monticello Utah</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/mesa_temple_reflection.jpeg" alt="Mesa Arizona" width="250" height="200">
+                <figcaption>Mesa Arizona</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/manti_temple.jpeg" alt="Manti Utah" width="250" height="200">
+                <figcaption>Manti Utah</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/draper_utah_temple.jpeg" alt="Draper Utah" width="250" height="200">
+                <figcaption>Draper Utah</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/rexburg_temple.jpeg" alt="Rexburg Idaho" width="250" height="200">
+                <figcaption>Rexburg Idaho</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/brigham-city-utah-temple-exterior5a.jpg" alt="Brigham City Idaho" width="250"
+                    height="200">
+                <figcaption>Brigham City Idaho</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/salt_lake_temple_lds.jpeg" alt="Salt Lake City Utah" width="250" height="200">
+                <figcaption>Salt Lake City Utah</figcaption>
+            </figure>-->
+        </div>
+    </main>
+    <footer>
+        <p>©2024 👀 Tanya Trampp 👀 New Mexico, USA</p> <!-- windows + "." REMEMBER this woman -->
+        <p>Last Modified: <span id="date-modified"></span></p> 
+        <script>
+            let text = document.lastModified;
+            document.getElementById("date-modified").innerHTML = text;
+        </script>
+    </footer>
+</body>
+
+</html>
