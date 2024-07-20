@@ -127,7 +127,7 @@ const temples = [
       area: 34245,
       imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/albuquerque-new-mexico/400x250/albuquerque-temple-lds-137883-wallpaper.jpg"
-    }
+    },
     {
       templeName: "Monticello Utah",
       location: "Monticello, Utah",
@@ -135,7 +135,7 @@ const temples = [
       area: 11225,
       imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/monticello-utah/400x250/monticello-temple-770706-wallpaper.jpg"
-    }
+    },
     {
       templeName: "Mesa Arizona",
       location: "Mesa, Arizona",
@@ -143,7 +143,7 @@ const temples = [
       area: 113916,
       imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mesa-arizona/400x250/mesa_arizona_temple_news_conference.jpeg"
-    }
+    },
   ];
 
 
