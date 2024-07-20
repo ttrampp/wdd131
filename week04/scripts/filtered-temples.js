@@ -16,15 +16,20 @@ document.querySelector("#lastModified").textContent = "Last Modified: ${document
 // hamburger button
 
 
-const header = document.querySelector("header");
-const hamburgerBtn = document.querySelector("#hamburger-btn");
-const closeMenuBtn = document.querySelector("#close-menu-btn");
+//const header = document.querySelector("header");
+//const hamburgerBtn = document.querySelector("#hamburger-btn");
+//const closeMenuBtn = document.querySelector("#close-menu-btn");
+ 
+const hamburger = document.querySelector("#hamburger");
+ 
+hamburger.addEventListener("click", () => {
+  document.querySelector("h1").classList.toggle("show");
+  document.querySelector("#pages").classList.toggle("show");
+  hamburger.classList.toggle("show");
+});
  
  
-hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
- 
- 
-closeMenuBtn.addEventListener("click", () => header.classList.remove("show-mobile-menu"));
+//closeMenuBtn.addEventListener("click", () => header.classList.remove("show-mobile-menu"));
 
 //const hamburger = document.querySelector('#header');
 ////const pages = document.querySelector('.pages');
@@ -37,9 +42,9 @@ closeMenuBtn.addEventListener("click", () => header.classList.remove("show-mobil
 //    hamburger.classList.toggle("show");
 //});
 //
-//function toggleActive(element) {                        //this was a new one for me
-//    element.classList.toggle("active");
-//}
+function toggleActive(element) {                        //this was a new one for me
+    element.classList.toggle("active");
+}
 
 //    pages.classList.toggle('open');
 //    title.style.display = pages.classList.contains('open') ? 'none' : 'block';
@@ -115,6 +120,30 @@ const temples = [
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
     // Add more temple objects here...
+    {
+      templeName: "Albuquerque New Mexico",
+      location: "Albuquerque, New Mexico",
+      dedicated: "2000, March, 5",
+      area: 34245,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/albuquerque-new-mexico/400x250/albuquerque-temple-lds-137883-wallpaper.jpg"
+    }
+    {
+      templeName: "Monticello Utah",
+      location: "Monticello, Utah",
+      dedicated: "1998, July, 26",
+      area: 11225,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/monticello-utah/400x250/monticello-temple-770706-wallpaper.jpg"
+    }
+    {
+      templeName: "Mesa Arizona",
+      location: "Mesa, Arizona",
+      dedicated: "1927, October, 23",
+      area: 113916,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mesa-arizona/400x250/mesa_arizona_temple_news_conference.jpeg"
+    }
   ];
 
 
@@ -161,40 +190,39 @@ const temples = [
  
 
 //function to clear the temple cards
-function clearTempleCards() {
-    const container = document.querySelector(".grid-container");
-    while (container.firstChild) {
-        container.removeChild(container.firstChild);
-    }
-}
+///function clearTempleCards() {
+///    const container = document.querySelector(".grid-container");
+///    while (container.firstChild) {
+///        container.removeChild(container.firstChild);
+///    }
+///}
  
+createTempleCard();
 
+function createTempleCard() { 
+    temples.forEach(temple => {
+      let card = document.createElement("section");
+      let name = document.createElement("h3");
+      let location = document.createElement("p");
+      let dedication = document.createElement("p");
+      let area = document.createElement("p");
+      let img = document.createElement("img");
 
-function createTempleCard(filteredTemples) {
-    clearTempleCards(); 
-    filteredTemples.forEach(temple => {
-    let card = document.createElement("section");
-    let name = document.createElement("h3");
-    let location = document.createElement("p");
-    let dedication = document.createElement("p");
-    let area = document.createElement("p");
-    let img = document.createElement("img");
+      name.textContent = temple.templeName;
+      location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+      dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
+      area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
+      img.setAttribute("src", temple.imageUrl);
+      img.setAttribute("alt", `${temple.templeName} Temple`);
+      img.setAttribute("loading", "lazy");
 
-    name.textContent = temple.templeName;
-    location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
-    dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
-    area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
-    img.setAttribute("src", temple.imageUrl);
-    img.setAttribute("alt", `${temple.templeName} Temple`);
-    img.setAttribute("loading", "lazy");
+      card.appendChild(name);
+      card.appendChild(location);
+      card.appendChild(dedication);
+      card.appendChild(area);
+      card.appendChild(img);
 
-    card.appendChild(name);
-    card.appendChild(location);
-    card.appendChild(dedication);
-    card.appendChild(area);
-    card.appendChild(img);
-
-    document.querySelector(".templelist").appendChild(card);
+      document.querySelector(".templelist").appendChild(card);
   });
   }
 
