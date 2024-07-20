@@ -41,6 +41,16 @@ document.getElementById("date-modified").innerHTML=document.lastModified;
 ////
 ////
 
+
+const currentDate = new Date()
+
+const options = {weekday: "long", year: "numeric", month: "long", day: "numeric"};
+const fullDate = currentDate.toLocaleDateString("en-US", options);
+
+//document.getElementById("full-date").innerHTML = fullDate;
+
+
+//
 const hambutton = document.querySelector("#hamburger");
 const navigation = document.querySelector("#pages")
 
@@ -218,50 +228,50 @@ const biggielink = document.getElementById("biggie");
 const weelittlelink = document.getElementById("weelittle");
 const headerhome = document.querySelector("h2");
 
-createTemple(temples);
+CreateTempleCards(temples);
 
 homielink.addEventListener("click", () => {
-  createTemple(temples);
+  CreateTempleCards(temples);
   headerhome.textContent = "Home";
 });
 
 oldielink.addEventListener("click", () => {
-  const newtemples = temples.filter((temple) => {
+  const oldtemples = temples.filter((temple) => {
     const year = new Date(temple.dedicated).getFullYear();
     return year < 2005;
   });
-  createTemple(oldtemples);
-  headerhome.textContent = "oldie"
+  CreateTempleCards(oldtemples);
+  headerhome.textContent = "Old"
 });
 
 newbielink.addEventListener("click", () => {
   const newtemples = temples.filter((temple) => {
     const year = new Date(temple.dedicated).getFullYear();
-    return year >= 2005 && year < 2005;
+    return year > 2004;
   });
-  createTemple(newtemples);
-  headerhome.textContent = "newbie"
+  CreateTempleCards(newtemples);
+  headerhome.textContent = "New"
 });
 
 biggielink.addEventListener("click", () => {
   const bigtemples = temples.filter((temple) => 
   temple.area >= 10000);
   
-  createTemple(bigtemples);
-  headerhome.textContent = "biggie"
+  CreateTempleCards(bigtemples);
+  headerhome.textContent = "Large"
 });
 
 weelittlelink.addEventListener("click", () => {
   const liltemples = temples.filter((temple) => 
   temple.area < 10000);
   
-  createTemple(liltemples);
-  headerhome.textContent = "weelittle"
+  CreateTempleCards(liltemples);
+  headerhome.textContent = "Small"
 });
  
 
 
-function createTemple(templess) {
+function CreateTempleCards(templess) {
   document.querySelector(".templelist").innerHTML =""; 
     templess.forEach(temple => {
       let card = document.createElement("section");
