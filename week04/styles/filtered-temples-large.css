@@ -1,7 +1,7 @@
 /* the temples-large.css file is used for the larger view */
 
 
-@media only screen and (min-width: 505px) {
+@media only screen and (min-width: 600px) {
 
     h1.handler {
         display: block;
