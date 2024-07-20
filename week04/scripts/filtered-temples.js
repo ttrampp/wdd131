@@ -42,9 +42,9 @@ hamburger.addEventListener("click", () => {
 //    hamburger.classList.toggle("show");
 //});
 //
-function toggleActive(element) {                        //this was a new one for me
-    element.classList.toggle("active");
-}
+//function toggleActive(element) {                        //this was a new one for me
+  //  element.classList.toggle("active");
+//}
 
 //    pages.classList.toggle('open');
 //    title.style.display = pages.classList.contains('open') ? 'none' : 'block';
@@ -196,11 +196,60 @@ const temples = [
 ///        container.removeChild(container.firstChild);
 ///    }
 ///}
- 
-createTempleCard();
 
-function createTempleCard() { 
-    temples.forEach(temple => {
+
+const oldielink = document.getElementById("oldie");
+const newbielink = document.getElementById("newbie");
+const biggielink = document.getElementById("biggie");
+const weelittlelink = document.getElementById("weelittle");
+const headerhome = document.getElementById("h2");
+
+createTempleCard(temples);
+
+homepage.addEventListener("click", () => {
+  createTempleCard(temples);
+  headerhome.textContent = "Home";
+});
+
+oldie.addEventListener("click", () => {
+  const newtemples = temples.filter((temple) => {
+    const year = new Date(temple.dedicated).getFullYear();
+    return year < 2005;
+  });
+  createTempleCard(oldtemples);
+  headerhome.textContent = "oldie"
+});
+
+newbie.addEventListener("click", () => {
+  const newtemples = temples.filter((temple) => {
+    const year = new Date(temple.dedicated).getFullYear();
+    return year >= 2005 && year < 2005;
+  });
+  createTempleCard(newtemples);
+  headerhome.textContent = "newbie"
+});
+
+biggie.addEventListener("click", () => {
+  const bigtemples = temples.filter((temple) => 
+  temple.area >= 10000);
+  
+  createTempleCard(bigtemples);
+  headerhome.textContent = "biggie"
+});
+
+weelittle.addEventListener("click", () => {
+  const liltemples = temples.filter((temple) => 
+  temple.area < 10000);
+  
+  createTempleCard(liltemples);
+  headerhome.textContent = "weelittle"
+});
+ 
+
+
+function createTempleCard(templess) {
+  document.querySelector(".templelist").innerHTML =""; 
+    templess.forEach(temple => {
       let card = document.createElement("section");
       let name = document.createElement("h3");
       let location = document.createElement("p");
