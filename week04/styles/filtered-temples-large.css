@@ -3,22 +3,29 @@
 
 @media only screen and (min-width: 505px) {
 
+    h1.handler {
+        display: block;
+        width: 100%;
+    }
+
     #hamburger {
         display: none;
     }
 
     .pages {
-        display: flex;
+        /*display: flex;*/
         justify-content: flex-end;
         flex-direction: row;
-        flex-grow: 1;
+        /*flex-grow: 1;*/
         background-color: #222916;
-        width: auto;
+        /*width: auto;*/
     }
 
     .pages a {
-        flex: auto;
-        text-align: center;
+        display: block;
+        /*flex: auto;*/
+        /*text-align: center;*/
+        font-size: 1.5rem;
     }
 
     .pages a:hover {
@@ -40,7 +47,7 @@
         padding: 50px;
         gap: 10px;
         color: #F3E3CE;
-    }
+    }*/
 
 
 
