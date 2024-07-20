@@ -20,13 +20,13 @@ document.querySelector("#lastModified").textContent = "Last Modified: ${document
 //const hamburgerBtn = document.querySelector("#hamburger-btn");
 //const closeMenuBtn = document.querySelector("#close-menu-btn");
  
-const hamburger = document.querySelector("#hamburger");
- 
-hamburger.addEventListener("click", () => {
-  document.querySelector("h1").classList.toggle("show");
-  document.querySelector("#pages").classList.toggle("show");
-  hamburger.classList.toggle("show");
-});
+//const hamburger = document.querySelector("#hamburger");
+// 
+//hamburger.addEventListener("click", () => {
+//  document.querySelector("h1").classList.toggle("show");
+//  document.querySelector("#pages").classList.toggle("show");
+//  hamburger.classList.toggle("show");
+//});
  
  
 //closeMenuBtn.addEventListener("click", () => header.classList.remove("show-mobile-menu"));
@@ -36,6 +36,16 @@ hamburger.addEventListener("click", () => {
 ////const title = document.querySelector('.title');
 ////
 ////
+
+const hambutton = document.querySelector("#hamburger");
+const navigation = document.querySelector("#pages")
+
+hambutton.addEventListener("click", () => {
+  navigation.classList.toggle("open");
+  hambutton.classList.toggle("open");
+});
+
+
 //hamburger.addEventListener('click', () => {
 //    document.querySelector("h1").classList.toggle("show");
 //    document.querySelector("pages").classList.toggle("show");
@@ -197,57 +207,57 @@ const temples = [
 ///    }
 ///}
 
-
+const homielink = document.getElementById("homepage")
 const oldielink = document.getElementById("oldie");
 const newbielink = document.getElementById("newbie");
 const biggielink = document.getElementById("biggie");
 const weelittlelink = document.getElementById("weelittle");
-const headerhome = document.getElementById("h2");
+const headerhome = document.querySelector("h2");
 
-createTempleCard(temples);
+createTemple(temples);
 
-homepage.addEventListener("click", () => {
-  createTempleCard(temples);
+homielink.addEventListener("click", () => {
+  createTemple(temples);
   headerhome.textContent = "Home";
 });
 
-oldie.addEventListener("click", () => {
+oldielink.addEventListener("click", () => {
   const newtemples = temples.filter((temple) => {
     const year = new Date(temple.dedicated).getFullYear();
     return year < 2005;
   });
-  createTempleCard(oldtemples);
+  createTemple(oldtemples);
   headerhome.textContent = "oldie"
 });
 
-newbie.addEventListener("click", () => {
+newbielink.addEventListener("click", () => {
   const newtemples = temples.filter((temple) => {
     const year = new Date(temple.dedicated).getFullYear();
     return year >= 2005 && year < 2005;
   });
-  createTempleCard(newtemples);
+  createTemple(newtemples);
   headerhome.textContent = "newbie"
 });
 
-biggie.addEventListener("click", () => {
+biggielink.addEventListener("click", () => {
   const bigtemples = temples.filter((temple) => 
   temple.area >= 10000);
   
-  createTempleCard(bigtemples);
+  createTemple(bigtemples);
   headerhome.textContent = "biggie"
 });
 
-weelittle.addEventListener("click", () => {
+weelittlelink.addEventListener("click", () => {
   const liltemples = temples.filter((temple) => 
   temple.area < 10000);
   
-  createTempleCard(liltemples);
+  createTemple(liltemples);
   headerhome.textContent = "weelittle"
 });
  
 
 
-function createTempleCard(templess) {
+function createTemple(templess) {
   document.querySelector(".templelist").innerHTML =""; 
     templess.forEach(temple => {
       let card = document.createElement("section");

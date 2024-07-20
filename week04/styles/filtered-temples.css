@@ -23,7 +23,7 @@ html, body {
 
 h1 {
     background-color: #222916;
-    color: #000;
+    color: #F3E3CE;
     padding: 1.5rem;
 }
 
@@ -115,7 +115,7 @@ nav.show {
     content: "☰";
 }
 
-#hamburger.show::before {
+#hamburger.open::before {
     content: "❌";
 }
 
@@ -158,6 +158,10 @@ section p {
     text-align: center;
 }
 
+img {
+    max-width: 100%;
+}
+
 section img {
     width: 100%;
     height: auto;
@@ -179,6 +183,12 @@ footer {
     margin: 0;
 }
 
+.templelist {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    margin: 0 30px;
+}
 
  
 /* Media Queries */
