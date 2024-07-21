@@ -1,0 +1,49 @@
+
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "❎";
+}
+
+img {
+  max-width: 100%;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  align-self: flex-start; 
+}
+
+.navigation a {
+  display: none;
+
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+header {
+  background-color: #E4C59E;
+  display: grid;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px #333;
+}
+
+
+
+footer {
+  text-align: center;
+
+}
+
+section img {
+	width: 100%;
+	height: auto;
