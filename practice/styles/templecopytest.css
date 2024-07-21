@@ -32,8 +32,9 @@ h2 {
 header {
   background-color: #E4C59E;
   display: grid;
+
   padding: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+
   box-shadow: 0 0 30px #333;
 }
 
