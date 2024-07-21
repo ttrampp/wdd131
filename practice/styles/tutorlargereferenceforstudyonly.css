@@ -18,12 +18,12 @@
 
 @media (max-width: 768px) {
     .grid-container {
-        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+        grid-template-columns: 1fr; 
     }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .grid-container {
-        grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas médias */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
