@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --heading-font: 'Montserrat', serif;
+    --paragraph-font: 'Montserrat', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F4FAFF;
+    margin: 0;
+    padding: 0;
+    color: black;
+    height: 100%;
+    font-family: 'Montserrat', serif;
+}
+
+/*----------HEADER START----------*/
+header {
+    background-color: #535657;
+    text-align: center;
+    padding: 0px;
+    display: block;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    color: #F4FAFF;
+}
+
+header h1 {
+    padding: 1rem;
+    color: #F4FAFF;
+    font-size: larg;
+    height: 50px;
+    font-weight: bold;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    display: block;
+}
+
+.pages {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #4f646f;
+}
+
+.pages a {
+    color: #F4FAFF;
+    text-decoration: none;
+    font-size: large;
+}
+
+.pages a:hover {
+    color: #CFD11A;
+}
+
+/*----------HEADER END----------*/
+
+
+/*----------MAIN START----------*/
+main {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 2fr 1fr;
+    max-width: 1500px;
+    gap: 2rem;
+    padding: 1rem;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+h2 {
+    padding: 1rem;
+    color: #535657;
+    text-align: center;
+}
+
+/*----------SECTION CARDS START----------*/
+.card {
+    border: 1px solid #535657;
+    border-radius: 8px;
+    background-color: #b7adcf;
+    max-width: 800px;
+    /* Limits width of the main cards */
+    margin: 1rem auto;
+    /* Centers the card in the viewport */
+    padding: 1rem;
+
+}
+
+/*----------SECTION CARDS END----------*/
+
+/*-----SECTION CARD ABOUT ME START-----*/
+
+.selfie img {
+    float: right;
+    margin: 1rem;
+    padding: 5px;
+    height: auto;
+    border: 5px solid;
+    border-color: #535657;
+    width: 20%;
+    margin-top: -120px;
+}
+
+.me-info {
+    padding: 8px;
+    padding-top: 38px;
+    padding-bottom: 8px;
+    max-width: 505px;
+    text-indent: 20px;
+    margin-left: 20px;
+}
+
+.flag-info img {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 5px solid #535657;
+    padding: 1rem 0;
+}
+
+.flag-info figcaption {
+    /*display: flex;
+    /*text-align: center;*/
+    font-size: small;
+    /*padding: 1rem 0;*/
+    margin-left: 60px;
+}
+
+/*.flag-info figure {
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+    width: 150px;
+}*/
+
+/*.flag img {
+    height: auto;
+    float: left;
+    width: 100%;
+    padding: 26px;
+    /*border: 5px solid;
+    border-color: #535657;*/
+/* margin: .5rem;
+    display: flex;
+    flex-direction: column;
+}*/
+
+
+.place-home {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    /*text-indent: 20px;*/
+}
+
+.place-home h3 {
+    text-align: center;
+    padding-bottom: 0.5rem;
+    grid-column: 1/3;
+    border-bottom: 1px solid;
+    border-color: #535657;
+    margin: 1rem 0;
+    font-weight: bold;
+    width: 100%;
+}
+
+.nm-info2 p {
+    max-width: 600px;
+}
+
+.nm-info2 p {
+    /*padding-top: -326px;
+    margin-left: 225px;
+    padding-bottom: 26px;*/
+    margin: 0;
+    line-height: 1.5;
+    text-align: justify;
+    /*padding: 0;
+    max-width: 500px;*/
+    /*text-indent: 20px;*/
+}
+
+/*-----SECTION CARD ABOUT ME END-----*/
+
+/*-----SECTION CARD WEB DEV RESOURCES START-----*/
+
+h2 {
+    background-color: #4f646f;
+    border-radius: 8px;
+    padding: 1rem;
+    color: #F4FAFF;
+    border-bottom: 200px;
+}
+
+.web-resources {
+    height: 74%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.web-resources ul {
+    list-style-type: none; 
+    /*padding-left: 0; 
+    margin: 0 auto;*/
+}
+
+.web-resources li {
+    margin-bottom: 0.5rem; 
+}
+
+.resource-links {
+    margin: 100px;
+    color: black;
+}
+
+
+.card a {
+    color: #535657;
+    padding: 8px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-inline-start: 38px;
+    margin-bottom: 50px;
+}
+
+.card a:hover {
+    color: #CFD11A;
+}
+
+/*-----SECTION CARD WEB DEV RESOURCES START-----*/
+
+
+/*----------MAIN END----------*/
+
+
+/*----------FOOTER START----------*/
+footer {
+    background-color: #535657;
+    color: #F4FAFF;
+    padding: 2rem;
+    text-align: center;
+    /*grid-column: 1 / 4;*/
+    /*height: 100px;*/
+    margin: 0;
+}

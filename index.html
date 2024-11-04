@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Tanya Trampp</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Tanya Trampp - Home Page">
+    <meta name="author" content="Tanya Trampp">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Tanya Trampp</h1>
+        <nav class="pages">
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://byui.instructure.com/" target="_blank">I-learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/1-jn/4?lang=eng"
+                target="_blank">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <div class="about-me">
+                <h2>About Me</h2>
+            </div>
+            <div class="me-info">
+                <p> My name is Tanya Trampp. I lived most of my life in New Mexico. I am a stay-at-home mom. I have 6
+                    children with ages ranging from 12-32. I homeschool my two youngest children. Bookkeeping is another
+                    job I have. My husband and I spend as much time together and with the kids as we can.</p>
+            </div>
+            <div class="selfie">
+                <img id="photo-me" src="./images/profile.jpg" alt="Picture of Me" width="200" height="138">
+            </div>
+            <div class="place-home">
+                <h3>Kirtland, New Mexico</h3>
+                <div class="flag-info">
+                    <figure>
+                        <img id="flag" src="./images/nm-flag.png" alt="NM State Flag" width="200">
+                        <figcaption>New Mexico State Flag</figcaption>
+                    </figure>
+                </div>
+            
+                    <div class="nm-info2">
+                        <p>New Mexico is one of the Four Corner Region states, the south eastern most state of the four. NM a heavily
+                            blended culture state, with large numbers of Native American, Hispanic, and Anglo. NM is one of the
+                            most southern Rocky Mountain state. New Mexico's elevation ranges from 2,842 ft and 13,161 ft above
+                            sea level, with the average being about 4,700 ft above sea level. It is well known for it's
+                            spicy chile. A common question in NM is "Red, Green, or Christmas?".
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <div class="web-resources">
+                <ul id="resource-links">
+                    <li><a href="https://developer.mozilla.org/en-US/">mdn</a></li>
+                    <li><a href="https://www.w3schools.com/">w3schools</a></li>
+                    <li><a href="https://coolors.co/">color-generator</a></li>
+                    <li><a href="https://www.siegemedia.com/contrast-ratio">contrast-ratio</a></li>
+                    <li><a href="https://code.visualstudio.com/docs">VS-Code</a></li>
+                    <li><a href="https://codepip.com/games/">coding-games</a></li>
+                    <li><a href="https://gridbyexample.com/learn/">coding-help</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©2024 👀 Tanya Trampp 👀 New Mexico, USA</p> <!-- windows + ; for emojis- remember this woman! -->
+        <p>Last Modified: <span id="date-modified"></span></p> <!-- 1st time using JavaScript, yay!-->
+        <script>
+            let text = document.lastModified;
+            document.getElementById("date-modified").innerHTML = text;
+        </script>
+    </footer>
+</body>
+
+</html>
