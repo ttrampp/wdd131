@@ -34,7 +34,7 @@ header {
 header h1 {
     padding: 1rem;
     color: #F4FAFF;
-    font-size: larg;
+    font-size: large;
     height: 50px;
     font-weight: bold;
     margin-block-start: 0.67em;
@@ -47,7 +47,7 @@ header h1 {
 .bolded {
     font-weight: lighter;
     color: #b7adcf;
-  }
+}
 
 .pages {
     box-sizing: border-box;
