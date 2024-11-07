@@ -40,7 +40,7 @@ header h1 {
 
 .bolded {
     font-weight: lighter;
-    color: #b7adcf;
+    color: #CFD11A;
 }
 
 .pages {
@@ -118,6 +118,7 @@ h2 {
     max-width: 505px;
     text-indent: 20px;
     margin-left: 20px;
+    color: black;
 }
 
 .flag-info img {
@@ -173,6 +174,7 @@ h2 {
     /*padding: 0;
     max-width: 500px;*/
     /*text-indent: 20px;*/
+    color: black;
 }
 
 /*-----SECTION CARD ABOUT ME END-----*/
@@ -212,7 +214,7 @@ h2 {
 
 
 .card a {
-    color: #535657;
+    color: black;
     padding: 8px;
     display: flex;
     text-align: center;
@@ -240,4 +242,17 @@ footer {
     /*grid-column: 1 / 4;*/
     /*height: 100px;*/
     margin: 0;
+}
+
+#date-modified {
+    color: #CFD11A;
+    font-weight: bold;
+}
+
+footer p:last-of-type {
+    color: #CFD11A;
+    /* Make the whole line the same color */
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9em;
 }
