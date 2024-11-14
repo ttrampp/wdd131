@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Tanya Trampp</title>
+    <meta name="description" content="Temple Picture Album Activity">
+    <meta name="author" content="Tanya Trampp>">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="stylesheet" href="styles/temples.css">
+    <script src="scripts/temples.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Picture Album</h1>
+        <nav>
+            <button class="hamburger">☰</button>
+            <ul class="pages">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+        <div class="temples">
+            <figure>
+                <img src="images/farmington_temple_in_construction2.webp" alt="Farmington New Mexico" width="250"
+                    height="200">
+                <figcaption>Farmington New Mexico</figcaption>
+            </figure>
+            <figure>
+                <img src="images/abuquerque_temple_lds.webp" alt="Albuquerque New Mexico" width="250" height="200">
+                <figcaption>Albuquerque New Mexico</figcaption>
+            </figure>
+            <figure>
+                <img src="images/monticello_utah_temple.webp" alt="Monticello Utah" width="250" height="200">
+                <figcaption>Monticello Utah</figcaption>
+            </figure>
+            <figure>
+                <img src="images/mesa_temple_reflection.webp" alt="Mesa Arizona" width="250" height="200">
+                <figcaption>Mesa Arizona</figcaption>
+            </figure>
+            <figure>
+                <img src="images/manti_temple.webp" alt="Manti Utah" width="250" height="200">
+                <figcaption>Manti Utah</figcaption>
+            </figure>
+            <figure>
+                <img src="images/draper_utah_temple.webp" alt="Draper Utah" width="250" height="200">
+                <figcaption>Draper Utah</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rexburg_temple.webp" alt="Rexburg Idaho" width="250" height="200">
+                <figcaption>Rexburg Idaho</figcaption>
+            </figure>
+            <figure>
+                <img src="images/brigham_city_utah_temple_dawn.webp" alt="Brigham City Idaho" width="250"
+                    height="200">
+                <figcaption>Brigham City Idaho</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt_lake_temple_lds.webp" alt="Salt Lake City Utah" width="250" height="200">
+                <figcaption>Salt Lake City Utah</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>©2024 👀 Tanya Trampp 👀 New Mexico, USA</p> <!-- windows + "." REMEMBER this woman -->
+        <p>Last Modified: <span id="date-modified"></span></p> <!-- 1st time using JavaScript, yay!-->
+        <script>
+            let text = document.lastModified;
+            document.getElementById("date-modified").innerHTML = text;
+        </script>
+    </footer>
+</body>
+
+</html>
