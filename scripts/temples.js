@@ -1,4 +1,4 @@
-console.log("temples.js loaded successfully");
+console.log("temples.js loaded successfully");          /*test code */
 
 // last date and time modified
 let lastModifiedText = document.lastModified;
