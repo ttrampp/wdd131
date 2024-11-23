@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Tanya Trampp</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Tanya Trampp - Home Page">
+    <meta name="author" content="Tanya Trampp">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Kirtland, New Mexico USA</h1>
+    </header>
+    <main>
+        <div class="image-container">
+            <picture>
+                <!--<source srcset="images/farmington_612x612.webp">-->
+                <source srcset="images/San-Juan-Solar-09-scaled.webp">
+                <img src="images/farmington_400.webp" alt="San Juan Power Plant" class="sm">
+            </picture>
+            <div class="card">
+                <div class="card__content">
+                    <h2 class="card__header">Data</h2>
+                    <ul class="card__list">
+                        <li class="card__item">Area:</li>
+                        <li class="card__item">11.9 square miles</li>
+                        <li class="card__item">Population:</li>
+                        <li class="card__item">575 (2002)</li>
+                        <li class="card__item">State Capital:</li>
+                        <li class="card__item">Santa Fe</li>
+                        <li class="card__item">Languages:</li>
+                        <li class="card__item">English, Spanish, Navajo</li>
+                        <li class="card__item">Currency:</li>
+                        <li class="card__item">US Dollar</li>
+                        <li class="card__item">Time Zone:</li>
+                        <li class="card__item">Mountain Standard Time</li>
+                        <li class="card__item">Calling Code:</li>
+                        <li class="card__item">1+ 505</li>
+                        <li class="card__item">Internet TLD:</li>
+                        <li class="card__item">.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card2">
+                <div class="card2__content">
+                    <h2 class="card2__header">Weather</h2>
+                    <img src="images/1530391_weather_clouds_sun_sunny_icon.svg" alt="Weather Icon" class="cloud">
+                    <ul class="card2__list">
+                        <li class="card2__item">High Temp:</li>
+                        <li class="card2__item">63 ℉</li>
+                        <li class="card2__item">Low Temp:</li>
+                        <li class="card2__item">29 ℉</li>
+                        <li class="card2__item">Precipitation:</li>
+                        <li class="card2__item">0%</li>
+                        <li class="card2__item">Humidity:</li>
+                        <li class="card2__item">11%</li>
+                        <li class="card2__item">Wind:</li>
+                        <li class="card2__item">9 mph</li>
+                        <li class="card2__item">Wind Chill:</li>
+                        <li class="card2__item"><span id="windChill"></span>℉</li>
+                        <li class="card2__item"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>©2024 👀 Tanya Trampp 👀 New Mexico, USA</p>
+        <p>Last Modification: <span id="date-modified"></span></p>
+        <script>
+            let text = document.lastModified;
+            document.getElementById("date-modified").innerHTML = text;
+        </script>
+    </footer>
+</body>
+
+</html>
