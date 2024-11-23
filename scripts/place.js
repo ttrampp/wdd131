@@ -24,8 +24,4 @@ let windChill = isWindChillApplicable(temp, windSpeed)
 
 document.getElementById("windChill").textContent = windChill !== "N/A" ? `${windChill} ℉` : windChill;
 
-// Update footer with current year and last modified date
-//const footerYear = new Date().getFullYear();
-//const lastModifiedDate = document.lastModified;
 
-//document.getElementById("date-modified").textContent = lastModifiedDate;
