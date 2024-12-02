@@ -1,0 +1,47 @@
+/* the temples-large.css file is used for the larger view */
+
+
+@media only screen and (min-width: 505px) {
+
+    .hamburger {
+        display: none;
+    }
+
+    .pages {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        flex-grow: 1;
+        background-color: #d7d7d7;
+        width: auto;
+    }
+
+    .pages a {
+        flex: auto;
+        text-align: center;
+    }
+
+    .pages a:hover {
+        background-color: white;
+        color: black;
+    }
+
+    main {
+        padding: 1rem;
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .temples {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        background-color: #222916;
+        padding: 50px;
+        gap: 10px;
+        color: #F3E3CE;
+    }
+
+
+
+}

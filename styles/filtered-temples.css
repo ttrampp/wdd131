@@ -1,0 +1,108 @@
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+:root {
+    --heading-font: 'Roboto', serif;
+    --paragraph-font: 'Roboto', serif;
+    --color-one: #69675C;
+    --color-two: #F3E3CE;
+    --color-three: #8390B6;
+    --color-four: #222916;
+    --color-five: #d7d7db;
+}
+
+body {
+    font-family: var(--paragraph-font), sans-serif;
+    background-color: var(--color-three);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--color-four);
+    color: var(--color-two);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px double var(--color-four);
+    box-shadow: 0 0 30px var(--color-five);
+    position: relative;
+}
+
+.pages {
+    background-color: var(--color-four);
+    display: none;
+    flex-direction: column;
+    /* Changed to column for mobile layout */
+    position: absolute;
+    top: 100%;
+    /* Position the menu below the header */
+    left: 0;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Added box-shadow for better visibility */
+    z-index: 10;
+    /* Ensure menu is on top of other content */
+}
+
+.pages.open {
+    display: flex;
+}
+
+.pages a {
+    display: block;
+    color: var(--color-five);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--color-two);
+}
+
+.hamburger.open::before {
+    content: '❌';
+}
+
+footer {
+    background-color: #595959;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin: 0;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .pages {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: auto;
+        box-shadow: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
