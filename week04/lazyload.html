@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Tanya Trampp</title>
+    <meta name="description" content="Lazy Load Activity">
+    <meta name="author" content="Tanya Trampp>">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Lazy Load Activity</h1>
+    </header>
+    <main>
+        <picture><img src="images/farmington_temple_in_construction2.webp" alt="Farmington NM Temple image"
+                loading="lazy" width="400" height="600">
+        </picture>
+        <picture><img src="images/abuquerque_temple_lds.jpeg" alt="Albuquerque Temple image" loading="lazy" width="400"
+                height="600">
+        </picture>
+        <picture><img src="images/monticello_utah_temple.jpeg" alt="Monticello Temple image" loading="lazy" width="400"
+                height="600">
+        </picture>
+        <picture><img src="images/manti_temple.jpeg" alt="Manti Temple image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture><img src="images/mesa_temple_reflection.jpeg" alt="Mesa Temple image" loading="lazy" width="400"
+                height="600">
+        </picture>
+        <picture><img src="images/draper_utah_temple.jpeg" alt="Draper Temple image" loading="lazy" width="400"
+                height="600">
+        </picture>
+    </main>
+    <footer>
+        <p>©2024 👀 Tanya Trampp 👀 New Mexico, USA</p>
+        <p>Last Modification: <span id="date-modified"></span></p>
+        <script>
+            let text = document.lastModified;
+            document.getElementById("date-modified").innerHTML = text;
+        </script>
+    </footer>
+</body>
+
+</html>
