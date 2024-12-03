@@ -16,7 +16,7 @@
 }
 
 body {
-    font-family: var(--paragraph-font), sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: var(--color-three);
     margin: 0;
     padding: 0;
@@ -89,9 +89,24 @@ nav a:hover {
 footer {
     background-color: #222916;
     color: white;
-    padding: 2rem;
+    /*padding: 2rem;
     text-align: center;
+    margin: 0;*/
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    white-space: normal;
+}
+
+footer p {
+    line-height: 1.4;
     margin: 0;
+    padding: 0;
 }
 
 .templelist {
@@ -151,10 +166,14 @@ footer {
 }
 
 .templelist section h3 {
-    font-size: 1.5rem; /* Adjust to make the font larger */
-    font-weight: bold; /* Optional: Make it bold for emphasis */
-    text-align: center; /* Optional: Center-align the text */
-    margin: 10px 0; /* Adjust spacing around the name */
+    font-size: 1.5rem;
+    /* Adjust to make the font larger */
+    font-weight: bold;
+    /* Optional: Make it bold for emphasis */
+    text-align: center;
+    /* Optional: Center-align the text */
+    margin: 10px 0;
+    /* Adjust spacing around the name */
 }
 
 .pages a.active {

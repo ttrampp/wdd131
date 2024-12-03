@@ -1,8 +1,14 @@
 console.log("temples.js loaded successfully");          /*test code */
 
 // last date and time modified
-let lastModifiedText = document.lastModified;
-document.getElementById("date-modified").innerHTML = lastModifiedText;
+//let lastModifiedText = document.lastModified;
+//document.getElementById("date-modified").innerHTML = lastModifiedText;
+
+document.addEventListener('DOMContentLoaded', () => {
+    const lastModifiedText = document.lastModified;
+    const lastModifiedElement = document.getElementById("date-modified");
+    lastModifiedElement.textContent = lastModifiedText;
+});
 
 
 // hamburger button
@@ -97,24 +103,24 @@ const temples = [
         dedicated: "2000, March, 5",
         area: 34245,
         imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/albuquerque-new-mexico/400x250/albuquerque-temple-lds-137883-wallpaper.jpg"
-      },
-      {
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/albuquerque-new-mexico/400x250/albuquerque-temple-lds-137883-wallpaper.jpg"
+    },
+    {
         templeName: "Monticello Utah",
         location: "Monticello, Utah",
         dedicated: "1998, July, 26",
         area: 11225,
         imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/monticello-utah/400x250/monticello-temple-770706-wallpaper.jpg"
-      },
-      {
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/monticello-utah/400x250/monticello-temple-770706-wallpaper.jpg"
+    },
+    {
         templeName: "Mesa Arizona",
         location: "Mesa, Arizona",
         dedicated: "1927, October, 23",
         area: 113916,
         imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mesa-arizona/400x250/mesa_arizona_temple_news_conference.jpeg"
-      },
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mesa-arizona/400x250/mesa_arizona_temple_news_conference.jpeg"
+    },
 ];
 
 
