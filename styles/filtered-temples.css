@@ -20,6 +20,7 @@ body {
     background-color: var(--color-three);
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 header {
@@ -59,10 +60,11 @@ header {
 
 .pages a {
     display: block;
-    color: var(--color-five);
+    color: var(--color-two);
     text-align: center;
     padding: 1rem;
     text-decoration: none;
+    font-size: larger;
 }
 
 nav a:hover {
@@ -85,15 +87,56 @@ nav a:hover {
 }
 
 footer {
-    background-color: #595959;
+    background-color: #222916;
     color: white;
     padding: 2rem;
     text-align: center;
     margin: 0;
 }
 
+.templelist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    /*margin: 20px;*/
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 90%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (min-width: 600px) {
+    .templelist {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.templelist img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+}
+
+.templelist section {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: #333;
+    border-radius: 8px;*/
+}
+
+.templelist section p {
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+
 /* Media Queries */
-@media (min-width: 768px) {
+@media (min-width: 808px) {
     .pages {
         display: flex;
         flex-direction: row;
@@ -105,4 +148,18 @@ footer {
     .hamburger {
         display: none;
     }
+}
+
+.templelist section h3 {
+    font-size: 1.5rem; /* Adjust to make the font larger */
+    font-weight: bold; /* Optional: Make it bold for emphasis */
+    text-align: center; /* Optional: Center-align the text */
+    margin: 10px 0; /* Adjust spacing around the name */
+}
+
+.pages a.active {
+    background-color: var(--color-three);
+    color: #222916;
+    font-weight: bolder;
+    font-size: larger;
 }

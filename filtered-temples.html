@@ -7,9 +7,9 @@
     <title>WDD 131 - Dynamic Web Fundamentals - Tanya Trampp</title>
     <meta name="description" content="Temple Picture Album Activity">
     <meta name="author" content="Tanya Trampp>">
-    <link rel="stylesheet" href="styles/temples-large.css">
-    <link rel="stylesheet" href="styles/temples.css">
-    <script src="scripts/temples.js" defer></script>
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <script src="scripts/filtered-temples.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -21,19 +21,19 @@
         <nav>
             <button class="hamburger">☰</button>
             <ul class="pages">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
+                <li><a href="#" id="homepage">Home</a></li>
+                <li><a href="#" id="oldie">Old</a></li>
+                <li><a href="#" id="newbie">New</a></li>
+                <li><a href="#" id="biggie">Large</a></li>
+                <li><a href="#" id="weelittle">Small</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <h2>Home</h2>
-        <div class="temples">
-            <figure>
+        <div class="templelist">
+            <!--<figure>
                 <img src="images/farmington_temple_in_construction2.webp" alt="Farmington New Mexico" width="250"
                     height="200">
                 <figcaption>Farmington New Mexico</figcaption>
@@ -69,12 +69,12 @@
             <figure>
                 <img src="images/salt_lake_temple_lds.webp" alt="Salt Lake City Utah" width="250" height="200">
                 <figcaption>Salt Lake City Utah</figcaption>
-            </figure>
+            </figure>-->
         </div>
     </main>
     <footer>
-        <p>©2024 👀 Tanya Trampp 👀 New Mexico, USA</p> <!-- windows + "." REMEMBER this woman -->
-        <p>Last Modified: <span id="date-modified"></span></p> <!-- 1st time using JavaScript, yay!-->
+        <p>©2024 👀 Tanya Trampp 👀 New Mexico, USA</p>
+        <p>Last Modified: <span id="date-modified"></span></p>
         <script>
             let text = document.lastModified;
             document.getElementById("date-modified").innerHTML = text;
