@@ -140,6 +140,13 @@ textarea {
     margin-bottom: 15px;
 }
 
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+
 button {
     background: #009dff;
     color: black;
@@ -148,10 +155,19 @@ button {
     cursor: pointer;
     font-size: larger;
     font-weight: bold;
+    margin-top: 15px;
 }
 
 button:hover {
     background: goldenrod;
+}
+
+footer {
+    background-color: #421f1f;
+    color: antiquewhite;
+    padding: 2rem;
+    text-align: center;
+    margin: 0;
 }
 
 @media (max-width: 768px) {
