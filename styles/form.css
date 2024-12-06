@@ -1,0 +1,160 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #f2efcf;
+}
+
+header {
+    background: #421f1f;
+    color: antiquewhite;
+    padding: 1em 0;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 1em;
+    border: 1px solid #5a5e96;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #5a5e96;
+    background-color: #421f1f;
+}
+
+input,
+select,
+textarea,
+button {
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid blue;
+    border-radius: 5px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.rating label {
+    /*display: inline-block;*/
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.rating span {
+    font-size: 1.5em;
+    color: goldenrod;
+}
+
+.rating input[type="radio"] {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-top: 8px;
+    color: antiquewhite;
+    font-size: large;
+}
+
+textarea {
+    resize: none;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.date-of-installation {
+    margin-bottom: 25px;
+}
+
+.features {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    flex-direction: column;
+    gap: 1px;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+
+.features-header {
+    font-weight: bold;
+    margin-bottom: 1px;
+    color: antiquewhite;
+    font-size: large;
+}
+
+.check-all {
+    font-style: italic;
+    margin-bottom: 15px;
+    color: antiquewhite;
+}
+
+.features label {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: medium;
+}
+
+.features input[type="checkbox"] {
+    margin: 0;
+}
+
+.optional-text {
+    color: antiquewhite;
+    font-style: italic;
+    margin-left: 5px;
+    font-size: smaller;
+    margin-bottom: 15px;
+}
+
+button {
+    background: #009dff;
+    color: black;
+    border: none;
+    padding: 0.75em;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: bold;
+}
+
+button:hover {
+    background: goldenrod;
+}
+
+@media (max-width: 768px) {
+    form {
+        padding: 0.5em;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    input,
+    select,
+    textarea,
+    button {
+        font-size: 1em;
+        margin-bottom: 0.5em;
+    }
+}

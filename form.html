@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,68 @@
 
     <script src="scripts/form.js" defer></script>
 </head>
+
 <body>
-    
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="wf1" id="reviewForm">
+            <fieldset>
+                <label for="product">Product Name</label>
+                <div>
+                    <select id="product" name="product" required>
+                        <option value="" disabled selected>Choose a Product &#9662;</option>
+                    </select>
+                </div>
+
+                <label>Overall Rating</label>
+                <div class="rating">
+                    <label><span>&star;</span><input type="radio" name="overallRating" value="1 star"></label>
+                    <label><span>&star;&star;</span><input type="radio" name="overallRating" value="2 star"></label>
+                    <label><span>&star;&star;&star;</span><input type="radio" name="overallRating"
+                            value="3 star"></label>
+                    <label><span>&star;&star;&star;&star;</span><input type="radio" name="overallRating"
+                            value="4 star"></label>
+                    <label><span>&star;&star;&star;&star;&star;</span><input type="radio" name="overallRating"
+                            value="5 star"></label>
+                </div>
+
+                <div class="date-of-installation" id="dateContainer">
+                    <label for="installDate">Date of Installation
+                        <input type="date" id="installDate" name="installDate" required>
+                    </label>
+                </div>
+
+                <div class="features-header">Which features did you find useful in the product?</div>
+                <div class="check-all"><em>(Check all that apply)</em></div>
+                <div class="features">
+                    <label><input type="checkbox" name="features" value="Durability"> Durability</label>
+                    <label><input type="checkbox" name="features" value="Ease of Use"> Ease of Use</label>
+                    <label><input type="checkbox" name="features" value="Performance"> Performance</label>
+                    <label><input type="checkbox" name="features" value="Design"> Design</label>
+                </div>
+
+                <label for="review">Written Review<span class="optional-text">(Optional)</span></label>
+                <textarea id="review" name="review" rows="5" cols="30"
+                    placeholder="Write your review here..."></textarea>
+
+                <button type="submit">Post Review</button>
+
+            </fieldset>
+        </form>
+        <script>
+            document.getElementById('reviewForm').addEventListener('submit', (event) => {
+                event.preventDefault();
+                let reviewCount = parseInt(localStorage.getItem('reviewCount'), 10) || 0;
+                reviewCount++;
+                localStorage.setItem('reviewCount', reviewCount);
+                document.getElementById('reviewForm').submit();
+            });
+        </script>
+
+    </main>
+
 </body>
+
 </html>

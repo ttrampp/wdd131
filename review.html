@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <meta name="description" content="Review Confirmation Page">
+    <meta name="author" content="Tanya Trampp>">
+    <link rel="stylesheet" href="styles/review.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let reviewCount = parseInt(localStorage.getItem('reviewCount'), 10) || 0;
+            document.getElementById('reviewCount').textContent = reviewCount;
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Thank you for your review!</h1>
+    </header>
+    <main>
+        <p>Your review has been submitted.</p>
+        <p>Total Reviews Submitted: <span id="reviewCount">0</span></p>
+    </main>
+</body>
+
+</html>
