@@ -1,5 +1,18 @@
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+:root {
+    --heading-font: 'Roboto', serif;
+    --paragraph-font: 'Roboto', serif;
+}
+
+
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.5;
     margin: 0;
     padding: 0;

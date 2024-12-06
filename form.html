@@ -8,7 +8,9 @@
     <meta name="description" content="Product Review Form">
     <meta name="author" content="Tanya Trampp>">
     <link rel="stylesheet" href="styles/form.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="scripts/form.js" defer></script>
 </head>
 
@@ -73,6 +75,15 @@
 
     </main>
 
+    <footer>
+        <p>©2024 👀 Tanya Trampp 👀 New Mexico, USA</p> <!-- windows + "." REMEMBER this woman -->
+        <p>Last Modified: <span id="date-modified"></span></p> <!-- 1st time using JavaScript, yay!-->
+        <script>
+            let text = document.lastModified;
+            document.getElementById("date-modified").innerHTML = text;
+        </script>
+    </footer>
+    
 </body>
 
 </html>
