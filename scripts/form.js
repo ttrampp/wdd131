@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-localStorage.setItem('reviewCount', '0');
+/*localStorage.setItem('reviewCount', '0');*/ /*use when wanting to reset review count*/
 
 // last date and time modified
 let lastModifiedText = document.lastModified;

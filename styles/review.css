@@ -8,4 +8,13 @@
 * {
     background-color: #421f1f;
     color: antiquewhite;
+    text-align: center;
+}
+
+footer {
+    background-color: #421f1f;
+    color: antiquewhite;
+    padding: 10rem;
+    text-align: center;
+    margin: 0;
 }
