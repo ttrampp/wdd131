@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: #503;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    padding: 20px;
+    background-color: white;
+}
+
+div {
+    background-color: #dbe6db;
+    color: black;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+div label {
+    display: block;
+    background-color: #503;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: black;
+}
+
+.large,
+.small {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.large p,
+.small p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}

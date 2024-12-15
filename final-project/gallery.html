@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Tanya Trampp</title>
+    <meta name="description" content="Final Project -- Trampp's Treasures">
+    <meta name="author" content="Tanya Trampp>">
+    <link rel="stylesheet" href="styles/pottery.css">
+
+    <script src="scripts/pottery.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="gallery">
+            <p>You can make something beautiful too</p>
+            <div class="art">
+                <img src="images/clay-1139098_640.jpg" alt="Pottery Picture">
+                <img src="images/clay-1139098_640.jpg" alt="Pottery Picture">
+                <img src="images/clay-1139098_640.jpg" alt="Pottery Picture">
+                <img src="images/clay-1139098_640.jpg" alt="Pottery Picture">
+                <img src="images/clay-1139098_640.jpg" alt="Pottery Picture">
+                <img src="images/clay-1139098_640.jpg" alt="Pottery Picture">
+            </div>
+        </div>
+
+
+    </main>
+
+
+    <footer>
+        <p>©2024 👀 Tanya Trampp 👀 New Mexico, USA</p>
+        <p>Last Modified: <span id="date-modified">Loading...</span></p> <!--placeholder added-->
+        <script>
+            let text = document.lastModified;
+            document.getElementById("date-modified").innerHTML = text;
+        </script>
+    </footer>
+
+</body>
+
+</html>

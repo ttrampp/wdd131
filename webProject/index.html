@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Tanya Trampp</title>
+    <meta name="description" content="Website Project -- Family Tree Visual">
+    <meta name="author" content="Tanya Trampp>">
+    <link rel="stylesheet" href="styles/wp_large.css">
+    <link rel="stylesheet" href="styles/wp_small.css">
+    <script src="scripts/webProject.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the Family Tree Display!</h1>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="choice.html">Confirmation Page</a></li>
+                <li><a href="pedigree.html">Pedigree</a></li>
+                <li><a href="tree.html">Tree</a></li>
+            </ul>
+        </nav>
+        <section class="infoBlock">
+            <div>
+                <!--<p class="Welcome1">
+                    Welcome to the Family Tree Display!
+                </p>-->
+                <p class="Welcome2">
+                    This website is here to help you to display your family names on both a
+                </p>
+                <p class="Welcome3">
+                    FAMILY TREE IMAGE
+                </p>
+                <p class="Welcome4">
+                    and a
+                </p>
+                <p class="Welcome5">
+                    FAMILY PEDIGREE CHART.
+                </p>
+                <p class="Welcome6">
+                    These are great for screensavers or printouts.
+                </p>
+                <p class="Welcome7">
+                    ⬇ Fill in your family names on the form below. ⬇
+                </p>
+            </div>
+        </section>
+
+        <section class="infoForm">
+            <form method="get" action="choice.html" class="wb1" id="nameForm">
+                <fieldset>
+                    <div class="you">
+                        <label for="self">Your Name:</required></label>
+                        <input type="text" id="self" name="self" placeholder="Your Name">
+                    </div>
+                    <div class="father">
+                        <label for="dad">Father's Name:</required></label>
+                        <input type="text" id="dad" name="dad" placeholder="Father's Name">
+                    </div>
+                    <div class="mother">
+                        <label for="mom">Mother's Name:</required></label>
+                        <input type="text" id="mom" name="mom" placeholder="Mother's Name">
+                    </div>
+                    <div class="paternalGrandfather">
+                        <label for="pGpa">Paternal Grandfather's Name:</required></label>
+                        <input type="text" id="pGpa" name="pGpa" placeholder="Paternal Grandfather's Name">
+                    </div>
+                    <div class="paternalGrandmother">
+                        <label for="pGma">Paternal Grandmother's Name:</required></label>
+                        <input type="text" id="pGma" name="pGma" placeholder="Paternal Grandmother's Name">
+                    </div>
+                    <div class="maternalGrandfather">
+                        <label for="mGpa">Maternal Grandfather's Name:</required></label>
+                        <input type="text" id="mGpa" name="mGpa" placeholder="maternal Grandfather's Name">
+                    </div>
+                    <div class="maternalGrandmother">
+                        <label for="mGma">Maternal Grandmother's Name:</required></label>
+                        <input type="text" id="mGma" name="mGma" placeholder="maternal Grandmother's Name">
+                    </div>
+                    <div class="paternalGreatGrandfather1">
+                        <label for="pGGpa1">Paternal Great Grandfather's Name:</required></label>
+                        <input type="text" id="pGGpa1" name="pGGpa1" placeholder="Paternal Great Grandfather's Name">
+                    </div>
+                    <div class="paternalGreatGrandmother1">
+                        <label for="pGGma1">Paternal Great Grandmother's Name:</required></label>
+                        <input type="text" id="pGGma1" name="pGGma1" placeholder="Paternal Great Grandmother's Name">
+                    </div>
+                    <div class="paternalGreatGrandfather2">
+                        <label for="pGGpa2">Paternal Great Grandfather's Name:</required></label>
+                        <input type="text" id="pGGpa2" name="pGGpa2" placeholder="Paternal Great Grandfather's Name">
+                    </div>
+                    <div class="PaternalGreatGrandmother2">
+                        <label for="pGGma2">Paternal Great Grandmother's Name:</required></label>
+                        <input type="text" id="pGma2" name="pGGma2" placeholder="Paternal Great Grandmother's Name">
+                    </div>
+                    <div class="maternalGreatGrandfather1">
+                        <label for="pGGpa3">Maternal Great Grandfather's Name:</required></label>
+                        <input type="text" id="mGGpa1" name="mGGpa1" placeholder="Maternal Great Grandfather's Name">
+                    </div>
+                    <div class="maternalGreatGrandmother1">
+                        <label for="mGGma1">Paternal Great Grandmother's Name:</required></label>
+                        <input type="text" id="pGGma1" name="mGGma1" placeholder="Maternal Great Grandmother's Name">
+                    </div>
+                    <div class="maternalGreatGrandfather2">
+                        <label for="mGGpa2">Maternal Great Grandfather's Name:</required></label>
+                        <input type="text" id="mGGpa2" name="mGGpa2" placeholder="Maternal Great Grandfather's Name">
+                    </div>
+                    <div class="maternalGreatGrandmother2">
+                        <label for="mGGma2">Maternal Great Grandmother's Name:</required></label>
+                        <input type="text" id="mGGma2" name="mGGma2" placeholder="Maternal Great Grandmother's Name">
+                    </div>
+
+                    <button type="submit">Complete Form</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>©2024 👀 Tanya Trampp 👀 New Mexico, USA</p>
+        <p>Last Modified: <span id="date-modified">Loading...</span></p> <!--placeholder added-->
+        <script>
+            let text = document.lastModified;
+            document.getElementById("date-modified").innerHTML = text;
+        </script>
+    </footer>
+</body>
+
+</html>

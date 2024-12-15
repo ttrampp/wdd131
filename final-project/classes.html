@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Tanya Trampp</title>
+    <meta name="description" content="Final Project -- Trampp's Treasures">
+    <meta name="author" content="Tanya Trampp>">
+    <link rel="stylesheet" href="styles/pottery.css">
+
+    <script src="scripts/pottery.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        "Sign up now for our beginner-friendly workshops or explore our advanced sessions to refine your skills. Let's
+        create together!"</p>
+
+        <header>
+            <h1>Classes</h1>
+        </header>
+        <main>
+            <form method="get" action="confirmation.html" class="wf1" id="reviewForm">
+                <fieldset>
+                    <label for="classes">Classes</label>
+                    <div>
+                        <select id="classes" name="classes" required>
+                            <option value="" disabled selected>Choose which classes you would like to sign up for
+                                &#9662;</option>
+                        </select>
+                    </div>
+
+                    <label>Skill Level</label>
+                    <div class="skill">
+                        <label><span>&star;</span> Beginner<input type="radio" name="skillLevel" value="1 star"></label>
+                        <label><span>&star;&star;</span> Intermediate<input type="radio" name="skillLevel"
+                                value="2 star"></label>
+                        <label><span>&star;&star;&star;</span> Advanced<input type="radio" name="skillLevel"
+                                value="3 star"></label>
+                    </div>
+
+                    <div class="class-start-date" id="dateContainer">
+                        <label for="startDate">Date class starts
+                            <input type="date" id="startDate" name="startDate" required>
+                        </label>
+                    </div>
+
+                    <div class="features-header">Which features did you find useful in the product?</div>
+                    <div class="check-all"><em>(Check all that apply)</em></div>
+                    <div class="features">
+                        <label><input type="checkbox" name="features" value="Durability"> Durability</label>
+                        <label><input type="checkbox" name="features" value="Ease of Use"> Ease of Use</label>
+                        <label><input type="checkbox" name="features" value="Performance"> Performance</label>
+                        <label><input type="checkbox" name="features" value="Design"> Design</label>
+                    </div>
+
+
+                    <label for="review">Written Review<span class="optional-text">(Optional)</span></label>
+                    <textarea id="review" name="review" rows="5" cols="30"
+                        placeholder="Write your review here..."></textarea>
+
+
+                    <label for="userName">Your Name<span class="optional-text">(Optional)</span></label>
+                    <input type="text" id="userName" name="userName" placeholder="Enter your name">
+
+                    <button type="submit">Post Review</button>
+
+                </fieldset>
+            </form>
+
+            <section class="text-boxes-section">
+                <h2>Class Details</h2>
+                <div class="text-boxes">
+                    <div class="text-box">
+                        <label>Title 1</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="text-box">
+                        <label>Title 1</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="text-box">
+                        <label>Title 1</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="text-box">
+                        <label>Title 1</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="text-box">
+                        <label>Title 1</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="text-box">
+                        <label>Title 1</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="text-box">
+                        <label>Title 1</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="text-box">
+                        <label>Title 1</label>
+                        <textarea></textarea>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <footer>
+            <p>©2024 👀 Tanya Trampp 👀 New Mexico, USA</p>
+            <p>Last Modified: <span id="date-modified">Loading...</span></p> <!--placeholder added-->
+            <script>
+                let text = document.lastModified;
+                document.getElementById("date-modified").innerHTML = text;
+            </script>
+        </footer>
+
+</body>
+
+</html>

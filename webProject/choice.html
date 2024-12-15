@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Tanya Trampp</title>
+    <meta name="description" content="Website Project -- Choice Page">
+    <meta name="author" content="Tanya Trampp>">
+    <link rel="stylesheet" href="styles/wp_large.css">
+    <link rel="stylesheet" href="styles/wp_small.css">
+    <script src="scripts/webProject.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+
+</head>
+
+<body>
+    <header>
+        <h1>Congrats! Your family has been uploaded into the tree!</h1>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="choice.html">Confirmation Page</a></li>
+                <li><a href="pedigree.html">Pedigree</a></li>
+                <li><a href="tree.html">Tree</a></li>
+            </ul>
+        </nav>
+
+        <section class="info-bits">
+            <div>
+                <p class="info1">You can now view your customized PEDIGREE CHART or FAMILY TREE image.</p>
+                <p class="info2">⬇ Choose your option below ⬇</p>
+            </div>
+        </section>
+
+        <div class="choice-container">
+            <a href="pedigree.html" class="choice-link"><img src="images/genealogy-svgrepo-com.svg"
+                    alt="Geneaolgy Icon">
+                <span>VIEW PEDIGREE CHART</span>
+            </a>
+            <a href="tree.html" class="choice-link"><img src="images/tree-park-svgrepo-com.svg" alt="Tree Icon">
+                <span>VIEW FAMILY TREE</span>
+            </a>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p>©2024 👀 Tanya Trampp 👀 New Mexico, USA</p>
+        <p>Last Modified: <span id="date-modified">Loading...</span></p> <!--placeholder added-->
+        <script>
+            let text = document.lastModified;
+            document.getElementById("date-modified").innerHTML = text;
+        </script>
+    </footer>
+</body>
+
+</html>
