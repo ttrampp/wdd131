@@ -55,7 +55,7 @@ main {
     border-radius: 8px;
 }*/
 
-/*----------NAVIGATION----------*/
+/*----------NAVIGATION----------*//**********************************************************************/
 
 
 nav {
@@ -103,7 +103,7 @@ nav ul li a:hover {
     background-color: var(--color-two);
 }
 
-/*----------COMPANY NAME----------*/
+/*----------COMPANY NAME----------*//**********************************************************************/
 
 .coName img {
     display: block;
@@ -116,13 +116,13 @@ nav ul li a:hover {
     float: left;
 }
 
-/*----------CONTAINER----------*/
+/*----------CONTAINER----------*//**********************************************************************/
 
 .containerTop {
     margin-top: 5px;
 }
 
-/*----------INDEX.HTML ONLY----------*/
+/*----------INDEX.HTML ONLY----------*//**********************************************************************/
 
 .aboutUs {
     display: grid;
@@ -172,7 +172,7 @@ nav ul li a:hover {
     font-size: 1.5rem;
 }
 
-/*----------INDEX EXAMPLES SECTION----------*/
+/*----------INDEX EXAMPLES SECTION----------*//**********************************************************************/
 
 .encourage {
     text-align: center;
@@ -198,7 +198,7 @@ nav ul li a:hover {
     margin-bottom: 50px;
 }
 
-/*----------CLASSES HTML ONLY----------*/
+/*----------CLASSES HTML ONLY----------*//**********************************************************************/
 
 .classHeader {
     text-align: center;
@@ -225,7 +225,7 @@ nav ul li a:hover {
     text-align: center;
 }
 
-/*----------CLASS FORM----------*/
+/*----------CLASS FORM----------*//**********************************************************************/
 
 #classForm {
     background-color: var(--color-four);
@@ -299,7 +299,7 @@ nav ul li a:hover {
 
 #classForm input[type="text"],
 #classForm input[type="date"],
-#classForm select, 
+#classForm select,
 #classForm p {
     width: 100%;
     padding: 5px;
@@ -327,7 +327,7 @@ nav ul li a:hover {
     margin-top: 74px;
 }*/
 
-/*----------CLASSES----------*/
+/*----------CLASSES----------*//**********************************************************************/
 
 
 .text-boxes-section {
@@ -352,7 +352,8 @@ nav ul li a:hover {
     border: 1px solid var(--color-three);
     border-radius: 8px;
     background-color: var(--color-four);
-    overflow: hidden; /*I don't want scroll bars*/
+    overflow: hidden;
+    /*I don't want scroll bars*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -384,7 +385,7 @@ nav ul li a:hover {
     width: 74%;
 }
 
-/* Responsive styling for smaller screens */
+/* Responsive styling for smaller screens *//**********************************************************************/
 @media (max-width: 768px) {
     .classes-container {
         flex-direction: column;
@@ -416,7 +417,7 @@ nav ul li a:hover {
 }
 
 
-/*----------GALLERY----------*/
+/**********GALLERY**********//**********************************************************************/
 .art {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -429,7 +430,7 @@ nav ul li a:hover {
     box-sizing: border-box;
 }
 
-/*----------FOOTER----------*/
+/**********FOOTER**********//**********************************************************************/
 
 footer {
     background-color: var(--color-three);
