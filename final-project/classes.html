@@ -17,11 +17,6 @@
 
 <body>
     <header>
-
-    </header>
-
-
-    <main>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -30,31 +25,29 @@
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
+        <h1 class="classHeader">Sign up now for our classes. Let's create together!</h1>
+    </header>
 
-        "Sign up now for our beginner-friendly workshops or explore our advanced sessions to refine your skills. Let's
-        create together!"</p>
 
-        <header>
-            <h1>Classes</h1>
-        </header>
-        <main>
+    <main>
+
+        <div class="classes-container">
+
             <form method="get" action="confirmation.html" class="wf1" id="classForm">
                 <fieldset>
-                    <label for="classes">Classes</label>
+                    <label for="classes" id="firstLabel">Classes</label>
                     <div>
                         <select id="classes" name="classes" required>
-                            <option value="" disabled selected>Choose which classes you would like to sign up for
+                            <option value="" disabled selected>Choose your class
                                 &#9662;</option>
                         </select>
                     </div>
 
                     <label>Skill Level</label>
                     <div class="skill">
-                        <label>Beginner<input type="radio" name="skillLevel" value="beginner"></label>
-                        <label>Intermediate<input type="radio" name="skillLevel"
-                                value="intermediate"></label>
-                        <label>A bit more<input type="radio" name="skillLevel"
-                                value="advanced"></label>
+                        <label>I am new at this<input type="radio" name="skillLevel" value="beginner"></label>
+                        <label>I know a bit<input type="radio" name="skillLevel" value="intermediate"></label>
+                        <label>Perhaps a bit more<input type="radio" name="skillLevel" value="advanced"></label>
                     </div>
 
                     <div class="class-start-date" id="dateContainer">
@@ -63,10 +56,8 @@
                         </label>
                     </div>
 
-
-                    <label for="review">Special Notes/Requests<span class="optional-text">(Optional)</span></label>
-                    <textarea id="review" name="review" rows="5" cols="30"
-                        placeholder="Write your review here..."></textarea>
+                    <label for="notes">Special Notes/Requests<span class="optional-text">(Optional)</span></label>
+                    <p id="notes" name="notes" rows="5" cols="30" placeholder="Write your notes or request here..."></p>
 
 
                     <label for="firstName">First Name<span class="firstName"></span></label>
@@ -77,68 +68,76 @@
 
                     <button type="submit">Sign-up for Class</button>
 
+                    <!--<p>To reach a goal you have never attained, you must do things you have never done before. --
+                        Richard G Scott</p>-->
+
                 </fieldset>
             </form>
 
+
             <section class="text-boxes-section">
-                <h2>Class Details</h2>
-                    <h3>All fees are to be paid at beginning of class. Cash or Card only. Children ages 10 and up may join classes.</h3>
+                <!--<h2>Class Details</h2>-->
+                <h3>All fees are to be paid at beginning of class. Cash or Card only. Ages 10 and up.</h3>
                 <div class="text-boxes">
                     <div class="text-box">
-                        <label>Beginner - Tuesday evening - BT1</label>
-                        <textarea>This is a 6 week course. 6pm to 8pm. We do a bit of handbuilding, wheel throwing,
-                            slip casting, and glaze mixing. The fee is $250. One small tool set and 25lbs of clay is included in the fee.
-                        </textarea>
+                        <label>Beginner - Tuesday evening - BT1 - $250</label>
+                        <p>This is a 6 week course. 6pm to 8pm.</p>
+                        <p>We do a bit of handbuilding, wheel throwing, slip casting, and glaze mixing. One small tool
+                            set and 25 lbs of clay is included in the fee.
+                        </p>
                     </div>
                     <div class="text-box">
-                        <label>Beginner - Thursday afternoon - BT2</label>
-                        <textarea>This is a 6 week course. 2pm to 4pm. We do a bit of handbuilding, wheel throwing,
-                            slip casting, and glaze mixing. The fee is $250. One small tool set and 25lbs of clay is included in the fee.
-                        </textarea>
+                        <label>Beginner - Thursday afternoon - BT2 - $250</label>
+                        <p>This is a 6 week course. 2pm to 4pm.</p>
+                        <p>We do a bit of handbuilding, wheel throwing, slip casting, and glaze mixing. One small tool
+                            set and 25 lbs of clay is included in the fee.
+                        </p>
                     </div>
                     <div class="text-box">
-                        <label>Intermediate - Tuesday afternoon - IT1</label>
-                        <textarea><br>6 week course. 2pm to 4pm.
-                            <br>This is more advanced than the beginner class. 
-                            The projects include sculpture building, wheel throwing pots with lids and consistent sizing, and Raku firing. 
-                            The fee is $300. 50lbs of clay is included in the fee.</br>
-                        </textarea>
+                        <label>Intermediate - Tuesday afternoon - IT1 - $300</label>
+                        <p>6 week course. 2pm to 4pm.</p>
+                        <p>This is more advanced than the beginner class. The projects include sculpture building, wheel
+                            throwing pots with lids and consistent sizing, and Raku firing. 50 lbs of clay is included
+                            in the fee.
+                        </p>
                     </div>
                     <div class="text-box">
-                        <label>Intermediate - Thursday evening - IT2</label>
-                        <br>This is a 6 week course. 6pm to 8pm. This is more advanced than the beginner class. 
-                            <br>The projects include sculpture building, wheel throwing pots with lids and consistent sizing, and Raku firing. 
-                            The fee is $300. 50lbs of clay is included in the fee.</br>
-                        </textarea>
+                        <label>Intermediate - Thursday evening - IT2 - $300</label>
+                        <br>This is a 6 week course. 6pm to 8pm. This is more advanced than the beginner class.
+                        <br>The projects include sculpture building, wheel throwing pots with lids and consistent
+                        sizing, and Raku firing. 50 lbs of clay is included in the fee.</br>
+                        </p>
                     </div>
                     <div class="text-box">
-                        <label>Friday Evening - FR1</label>
-                        <textarea>This is a two-part class. Build on Friday Night, Glaze on a Saturday (at least a week in between). 
-                            For this class, the project changes. It could be a small pot thrown on the wheel.
-                            <br>It could be a hand-built mug. The instructor chooses a small project to teach, and it may be
-                            different every week.</br>
-                        </textarea>
+                        <label>Friday Evening - FR1 - $40</label>
+                        <p>6pm to 8pm</p>
+                        <p>This is a two-part class. Build on Friday Night, Glaze on a Saturday (at least a week in
+                            between). For this class, the project changes. It could be a small pot thrown on the wheel.
+                            It could be a hand-built mug. The instructor chooses a small project to teach, and it may be
+                            different every week.
+                        </p>
                     </div>
                     <div class="text-box">
                         <label>Saturday Touch-ups - ST1</label>
-                        <textarea>Studio open from 10am to Noon. Students are welcome to come make adjustments to their project.
+                        <p>Studio open from 10am to Noon. Students are welcome to come make adjustments to their
+                            project.
                             They could come glaze their project for part-two of FR1.
-                        </textarea>
-                    </div>
+                        </p>
                     </div>
                 </div>
-            </section>
-        </main>
+        </div>
+        </section>
+    </main>
 
 
-        <footer>
-            <p>©2024 👀 Tanya Trampp 👀 New Mexico, USA</p>
-            <p>Last Modified: <span id="date-modified">Loading...</span></p> <!--placeholder added-->
-            <script>
-                let text = document.lastModified;
-                document.getElementById("date-modified").innerHTML = text;
-            </script>
-        </footer>
+    <footer>
+        <p>©2024 👀 Tanya Trampp 👀 New Mexico, USA</p>
+        <p>Last Modified: <span id="date-modified">Loading...</span></p> <!--placeholder added-->
+        <script>
+            let text = document.lastModified;
+            document.getElementById("date-modified").innerHTML = text;
+        </script>
+    </footer>
 
 </body>
 
