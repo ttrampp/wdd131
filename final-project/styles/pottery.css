@@ -137,6 +137,7 @@ nav ul li a:hover {
     align-items: center;
     padding: 20px;
     border-radius: 8px;
+    border: thick solid #503;
 }
 
 .aboutUs img {
@@ -146,21 +147,19 @@ nav ul li a:hover {
 }
 
 .aboutUs .leftBlock {
-    background-color: var(--color-two);
-    color: var(--color-six);
+    background-color: var(--color-four);
+    color: var(--color-one);
+    font-size: 1.5rem;
 }
 
 .aboutUs .leftBlock {
-    font-family: 'Pacifico', 'Dancing Script', cursive;
-    font-family: cursive;
-    font-size: 2.2rem;
-    font-weight: bold;
+    
     color: black;
     text-align: center;
     padding: 20px;
     /*background: linear-gradient(90deg, #5c3333, #dbe6db, #5c3333);*/
     background: #dbe6db;
-    background-size: 200% 200%;
+    background-size: 100% 100%;
     animation: gradientFlow 5s ease infinite;
 }
 
@@ -181,9 +180,7 @@ nav ul li a:hover {
 
 .examples {
     display: flex;
-    /*align images horizontally*/
     flex-wrap: wrap;
-    /*makes images wrap to next row if container is too small*/
     justify-content: center;
     gap: 2px;
 }
@@ -195,8 +192,55 @@ nav ul li a:hover {
     /*margin: 0;
     padding: 0;*/
     border: none;
+    margin-bottom: 50px;
 }
 
+/*----------CLASSES HTML ONLY----------*/
+
+/*----------CLASS FORM----------*/
+
+#classForm {
+    background-color: var(--color-four);
+    padding: 20px;
+    text-align: left;
+    border: solid var(--color-two);
+    border-radius: 8px;
+    max-width: 505px;
+    
+}
+
+#classForm label, #classForm textarea {
+    display: block;
+    margin-top: 10px;
+}
+
+#classForm label {
+    font-weight: bold;
+    margin-top: 26px;
+}
+
+#classForm input[type="text"], #classForm input[type="date"], 
+#classForm select, #classForm textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#classForm button {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #100dd8;
+    color: white;
+    border: thin black;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+#classForm button:hover {
+    background-color: yellow;
+    color: black;
+}
 /*----------CLASSES----------*/
 
 .classes-container {

@@ -38,7 +38,7 @@
             <h1>Classes</h1>
         </header>
         <main>
-            <form method="get" action="confirmation.html" class="wf1" id="reviewForm">
+            <form method="get" action="confirmation.html" class="wf1" id="classForm">
                 <fieldset>
                     <label for="classes">Classes</label>
                     <div>
@@ -50,11 +50,11 @@
 
                     <label>Skill Level</label>
                     <div class="skill">
-                        <label><span>&star;</span> Beginner<input type="radio" name="skillLevel" value="1 star"></label>
-                        <label><span>&star;&star;</span> Intermediate<input type="radio" name="skillLevel"
-                                value="2 star"></label>
-                        <label><span>&star;&star;&star;</span> Advanced<input type="radio" name="skillLevel"
-                                value="3 star"></label>
+                        <label>Beginner<input type="radio" name="skillLevel" value="beginner"></label>
+                        <label>Intermediate<input type="radio" name="skillLevel"
+                                value="intermediate"></label>
+                        <label>A bit more<input type="radio" name="skillLevel"
+                                value="advanced"></label>
                     </div>
 
                     <div class="class-start-date" id="dateContainer">
@@ -63,63 +63,68 @@
                         </label>
                     </div>
 
-                    <div class="features-header">Which features did you find useful in the product?</div>
-                    <div class="check-all"><em>(Check all that apply)</em></div>
-                    <div class="features">
-                        <label><input type="checkbox" name="features" value="Durability"> Durability</label>
-                        <label><input type="checkbox" name="features" value="Ease of Use"> Ease of Use</label>
-                        <label><input type="checkbox" name="features" value="Performance"> Performance</label>
-                        <label><input type="checkbox" name="features" value="Design"> Design</label>
-                    </div>
 
-
-                    <label for="review">Written Review<span class="optional-text">(Optional)</span></label>
+                    <label for="review">Special Notes/Requests<span class="optional-text">(Optional)</span></label>
                     <textarea id="review" name="review" rows="5" cols="30"
                         placeholder="Write your review here..."></textarea>
 
 
-                    <label for="userName">Your Name<span class="optional-text">(Optional)</span></label>
-                    <input type="text" id="userName" name="userName" placeholder="Enter your name">
+                    <label for="firstName">First Name<span class="firstName"></span></label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name">
 
-                    <button type="submit">Post Review</button>
+                    <label for="lastName">Last Name<span class="lastName"></span></label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+
+                    <button type="submit">Sign-up for Class</button>
 
                 </fieldset>
             </form>
 
             <section class="text-boxes-section">
                 <h2>Class Details</h2>
+                    <h3>All fees are to be paid at beginning of class. Cash or Card only. Children ages 10 and up may join classes.</h3>
                 <div class="text-boxes">
                     <div class="text-box">
-                        <label>Title 1</label>
-                        <textarea></textarea>
+                        <label>Beginner - Tuesday evening - BT1</label>
+                        <textarea>This is a 6 week course. 6pm to 8pm. We do a bit of handbuilding, wheel throwing,
+                            slip casting, and glaze mixing. The fee is $250. One small tool set and 25lbs of clay is included in the fee.
+                        </textarea>
                     </div>
                     <div class="text-box">
-                        <label>Title 1</label>
-                        <textarea></textarea>
+                        <label>Beginner - Thursday afternoon - BT2</label>
+                        <textarea>This is a 6 week course. 2pm to 4pm. We do a bit of handbuilding, wheel throwing,
+                            slip casting, and glaze mixing. The fee is $250. One small tool set and 25lbs of clay is included in the fee.
+                        </textarea>
                     </div>
                     <div class="text-box">
-                        <label>Title 1</label>
-                        <textarea></textarea>
+                        <label>Intermediate - Tuesday afternoon - IT1</label>
+                        <textarea><br>6 week course. 2pm to 4pm.
+                            <br>This is more advanced than the beginner class. 
+                            The projects include sculpture building, wheel throwing pots with lids and consistent sizing, and Raku firing. 
+                            The fee is $300. 50lbs of clay is included in the fee.</br>
+                        </textarea>
                     </div>
                     <div class="text-box">
-                        <label>Title 1</label>
-                        <textarea></textarea>
+                        <label>Intermediate - Thursday evening - IT2</label>
+                        <br>This is a 6 week course. 6pm to 8pm. This is more advanced than the beginner class. 
+                            <br>The projects include sculpture building, wheel throwing pots with lids and consistent sizing, and Raku firing. 
+                            The fee is $300. 50lbs of clay is included in the fee.</br>
+                        </textarea>
                     </div>
                     <div class="text-box">
-                        <label>Title 1</label>
-                        <textarea></textarea>
+                        <label>Friday Evening - FR1</label>
+                        <textarea>This is a two-part class. Build on Friday Night, Glaze on a Saturday (at least a week in between). 
+                            For this class, the project changes. It could be a small pot thrown on the wheel.
+                            <br>It could be a hand-built mug. The instructor chooses a small project to teach, and it may be
+                            different every week.</br>
+                        </textarea>
                     </div>
                     <div class="text-box">
-                        <label>Title 1</label>
-                        <textarea></textarea>
+                        <label>Saturday Touch-ups - ST1</label>
+                        <textarea>Studio open from 10am to Noon. Students are welcome to come make adjustments to their project.
+                            They could come glaze their project for part-two of FR1.
+                        </textarea>
                     </div>
-                    <div class="text-box">
-                        <label>Title 1</label>
-                        <textarea></textarea>
-                    </div>
-                    <div class="text-box">
-                        <label>Title 1</label>
-                        <textarea></textarea>
                     </div>
                 </div>
             </section>
