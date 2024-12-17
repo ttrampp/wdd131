@@ -203,6 +203,11 @@ nav ul li a:hover {
     margin-bottom: 50px;
 }
 
+.examples img:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
 /*----------CLASSES HTML ONLY----------*/
 /**********************************************************************/
 
@@ -498,6 +503,17 @@ nav ul li a:hover {
 /* Responsive styling for smaller screens */
 /**********************************************************************/
 @media (max-width: 768px) {
+
+    .examples img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .examples img:hover {
+        transform: scale(1.1);
+        z-index: 50;
+    }
+
     .classes-container {
         flex-direction: column;
     }
