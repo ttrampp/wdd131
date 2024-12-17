@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 - Dynamic Web Fundamentals - Tanya Trampp</title>
-    <meta name="description" content="Final Project -- Trampp's Treasures">
+    <meta name="description" content="Final Project -- Trampp's Treasures -- Classes Page">
     <meta name="author" content="Tanya Trampp>">
     <link rel="stylesheet" href="styles/pottery.css">
 
@@ -35,11 +35,10 @@
 
             <form method="get" action="confirmation.html" class="wf1" id="classForm">
                 <fieldset>
-                    <label for="classes" id="firstLabel">Classes</label>
+                    <label for="className">Class Name</label>
                     <div>
-                        <select id="classes" name="classes" required>
-                            <option value="" disabled selected>Choose your class
-                                &#9662;</option>
+                        <select id="className" name="className" required>
+                            <option value="" disabled selected>Choose your class &#9662;</option>
                         </select>
                     </div>
 
@@ -50,22 +49,20 @@
                         <label>I am quite familiar<input type="radio" name="skillLevel" value="advanced"></label>
                     </div>
 
-                    <div class="class-start-date" id="dateContainer">
-                        <label for="startDate">Date class starts
-                            <input type="date" id="startDate" name="startDate" required>
-                        </label>
-                    </div>
-
                     <label for="notes">Special Notes/Requests<span class="optional-text">(Optional)</span></label>
                     <textarea id="notes" name="notes" rows="5" cols="30"
                         placeholder="Write your notes or request here..."></textarea>
 
 
                     <label for="firstName">First Name<span class="firstName"></span></label>
-                    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name">
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
 
                     <label for="lastName">Last Name<span class="lastName"></span></label>
-                    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+
+                    <label for="phoneNumber">Phone Number<span class="phoneNumber"></span></label>
+                    <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number"
+                        required>
 
                     <button type="submit">Sign-up for Class</button>
 
@@ -81,7 +78,7 @@
                 <h3>All fees are to be paid at beginning of class. Cash or Card only. Ages 10 and up.</h3>
                 <div class="text-boxes">
                     <div class="text-box">
-                        <label>Beginner - Tuesday evening - BT1 - $250</label>
+                        <label>Beginner - Tuesday evening - $250</label>
                         <p><strong>This is a 6 week course. 6pm to 8pm.
                                 <br>********** ********** **********</br></strong>
                             <br>We do a bit of handbuilding, wheel throwing, slip casting, and glaze mixing. One small
@@ -90,7 +87,7 @@
                         </p>
                     </div>
                     <div class="text-box">
-                        <label>Beginner - Thursday afternoon - BT2 - $250</label>
+                        <label>Beginner - Thursday afternoon - $250</label>
                         <p><strong>This is a 6 week course. 2pm to 4pm.
                                 <br>********** ********** **********</br></strong>
                             <br>We do a bit of handbuilding, wheel throwing, slip casting, and glaze mixing. One small
@@ -99,7 +96,7 @@
                         </p>
                     </div>
                     <div class="text-box">
-                        <label>Intermediate - Tuesday afternoon - IT1 - $300</label>
+                        <label>Intermediate - Tuesday afternoon - $300</label>
                         <p><strong>6 week course. 2pm to 4pm.
                                 <br>********** ********** **********</br></strong>
                             <br>This is more advanced than the beginner class. The projects include sculpture building,
@@ -109,7 +106,7 @@
                         </p>
                     </div>
                     <div class="text-box">
-                        <label>Intermediate - Thursday evening - IT2 - $300</label>
+                        <label>Intermediate - Thursday evening - $300</label>
                         <p><strong>This is a 6 week course. 6pm to 8pm.
                                 <br>********** ********** **********</br></strong>
                             <br>This is more advanced than the beginner class.
@@ -118,7 +115,7 @@
                         </p>
                     </div>
                     <div class="text-box">
-                        <label>Friday Evening - FR1 - $40</label>
+                        <label>Friday Evening - $40</label>
                         <p><strong>One Friday evening 6pm to 8pm & One Saturday morning (not back-to-back)
                                 <br>********** ********** **********</br></strong>
                             <br>This is a two-part class. Build on Friday Night, Glaze on a Saturday (at least a week in
@@ -128,7 +125,7 @@
                         </p>
                     </div>
                     <div class="text-box">
-                        <label>Saturday Touch-ups - ST1</label>
+                        <label>Saturday Touch-ups - No extra fee</label>
                         <p><strong>Studio open from 10am to Noon.
                                 <br>********** ********** **********</br></strong>
                             <br>Open workshop. Students are welcome to come make adjustments to their
