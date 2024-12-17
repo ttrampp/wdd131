@@ -423,11 +423,11 @@ nav ul li a:hover {
     }
 
     .art {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
 
     .art img {
-        max-width: 100%;
+        max-width: 100% !important;
     }
 
 }
@@ -444,16 +444,19 @@ nav ul li a:hover {
     background-color: var(--color-four);
     padding: 20px;
     border-radius: 8px;
-    margin-bottom: 50px;
+    margin: 0 auto 50px auto;
     margin-top: 20px;
     box-sizing: border-box;
     width: 100%;
+    border: 2px solid var(--color-three);
 }
 
 .gallery p {
-    color: white;
+    color: var(--color-one);
     font-size: x-large;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .art {
@@ -468,13 +471,13 @@ nav ul li a:hover {
 
 .art img {
     width: 100%;
-    max-width: 200px;
+    /*max-width: 200px;*/
     height: auto;
     /*margin: 0;
     padding: 0;*/
     border: 5px solid var(--color-one);
     box-sizing: border-box;
-    margin-bottom: 20px;
+    margin: 0;
     transition: transform 0.3s ease;
 }
 
