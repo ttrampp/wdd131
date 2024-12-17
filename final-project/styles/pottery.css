@@ -574,6 +574,49 @@ nav ul li a:hover {
     }
 }
 
+/* Responsive styling for medium screens -- tablets */
+/**********************************************************************/
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .examples img {
+        width: calc(90% / 3);
+        max-width: 250px;
+    }
+
+    .classes-container {
+        flex-direction: row;
+    }
+
+    #classForm {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .text-boxes-section {
+        width: calc(100% - 380px);
+        flex: none;
+    }
+
+    .art {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .art img {
+        width: 100%;
+        max-width: none;
+    }
+
+    .addressContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .addressContainer .map iframe {
+        height: 300px;
+    }
+
+}
+
 
 /**********FOOTER**********/
 /**********************************************************************/
