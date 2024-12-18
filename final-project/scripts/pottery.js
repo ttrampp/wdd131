@@ -97,11 +97,16 @@ function displayConfirmation() {
     const classDetails = classNames.find(c => c.id === classID);
     const confirmationMessage = document.getElementById("confirmationMessage");
 
-    if (classDetails) {
-        confirmationMessage.textContent = `You signed up for: ${classDetails.name}. Cost: ${classDetails.cost}`;
+    if (confirmationMessage) {
+        if (classDetails) {
+            confirmationMessage.textContent = `You signed up for: ${classDetails.name}. Cost: ${classDetails.cost}`;
+        }
+        else {
+            confirmationMessage.textContent = "Class details could not be found. Please try again.";
+        }
     }
     else {
-        confirmationMessage.textContent = "Class details could not be found. Please try again.";
+        console.error("Error. Refresh your browser and try again please.")
     }
 }
 
